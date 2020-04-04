@@ -17,7 +17,7 @@ $(document).ready(function () {
                         
                         <div class="col-3 custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="business">
-                            <label class="custom-control-label" for="business">تحصیل</label>
+                            <label class="custom-control-label" for="business">کار</label>
                         </div>
                         <div class="col-3 custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="other">
