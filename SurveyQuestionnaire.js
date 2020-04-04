@@ -21,7 +21,7 @@ $(document).ready(function () {
                         </div>
                         <div class="col-3 custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="other">
-                            <label class="custom-control-label" for="other">موارد دیگر</label>
+                            <label class="custom-control-label" for="other">غیره</label>
                         </div>
                     </div>
                 </div>
