@@ -1,5 +1,6 @@
 $(document).ready(function () {
- var $jqval ="Hello";
+
+    var $jqval = "Hello";
     $("#question").html(`
                 <div class="col-sm-3 ">
                     <label class="col-form-label">هدف از سفر:</label>
