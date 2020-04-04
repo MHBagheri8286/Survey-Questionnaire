@@ -9,9 +9,45 @@
     <script src="jquery-3.4.1.js"></script>
     <script src="bootstrap.min.js"></script>
 </head>
-<div id="root"></div>
-
-<script type="text/javascript" src="app.js"></script>
+<div class="container">
+    <form class="text-dark">
+        <div class="form-group row">
+            <label for="inputName" class="col-lg-2 col-md-3 col-form-labal ">نام و نام خانوادگی:</label>
+            <div class="col-lg-4 col-md-3 ">
+                <input type="text" class=" form-control mb-2 mb-md-0" id="inputName">
+            </div>
+            <label for="inputRoute" class="col-lg-2 col-md-3 col-form-labal">مسیر:</label>
+            <div class="col-lg-4 col-md-3">
+                <div class="form-row">
+                    <div class="col-6 ">
+                        <input type="text" class="form-control" id="inputRouteFrom" placeholder="از">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="inputRouteTo" placeholder="به">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="date" class="col-lg-2 col-md-3 col-form-labal">تاریخ پرواز:</label>
+            <div class="col-lg-4 col-md-3">
+                <input type="text" class="form-control mb-2 mb-md-0" id="date" dir="ltr" placeholder="mm/dd/yyyy" />
+            </div>
+            <label for="flightNumber" class="col-lg-2 col-md-3 col-form-labal">شماره پرواز:</label>
+            <div class="col-lg-4 col-md-3">
+                <div class="form-row">
+                    <div class="col input-group" dir="ltr">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">W5</span>
+                        </div>
+                        <input class="form-control " id="flightNumber" name="flightNumber" type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row " id="question"></div>
+    </form>
+</div>
 <script type="text/javascript" src="SurveyQuestionnaire.js"></script>
 
 </html>

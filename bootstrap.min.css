@@ -69,7 +69,7 @@ body {
     line-height: 1.5;
     color: #212529;
     direction: rtl;
-    background-color: #fff
+    background-color: #f5f5f5
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -9334,6 +9334,23 @@ button.bg-dark:hover {
 .mx-auto {
     margin-left: auto !important
 }
+
+.padding-right-sm-22 {
+    padding-right: 2.2rem !important;
+}
+
+@media (min-width:768px) {
+    .padding-right-sm-22 {
+        padding-right: 5.8rem !important;
+    }
+}
+
+@media(min-width:992px) {
+    .padding-right-sm-22 {
+        padding-right: 2.2rem !important;
+    }
+}
+
 
 @media (min-width:576px) {
     .m-sm-0 {
