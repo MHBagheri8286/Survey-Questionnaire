@@ -4240,6 +4240,7 @@ input[type=submit].btn-block {
 
 .custom-control-label {
     position: relative;
+    cursor: pointer;
     margin-bottom: 0;
     vertical-align: top
 }
@@ -9335,19 +9336,19 @@ button.bg-dark:hover {
     margin-left: auto !important
 }
 
-.padding-right-sm-22 {
+.padding-right-sm {
     padding-right: 2.2rem !important;
 }
 
 @media (min-width:768px) {
-    .padding-right-sm-22 {
+    .padding-right-sm {
         padding-right: 5.8rem !important;
     }
 }
 
 @media(min-width:992px) {
-    .padding-right-sm-22 {
-        padding-right: 2.2rem !important;
+    .padding-right-sm {
+        padding-right: 2.15rem !important;
     }
 }
 

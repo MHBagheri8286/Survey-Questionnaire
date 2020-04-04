@@ -10,7 +10,7 @@ $(document).ready(function () {
     };
     $("#question").html(`
               <label class="col-md-2  col-form-label ">هدف از سفر:</label>
-            <div class="col-md-10 padding-right-sm-22">
+            <div class="col-md-10 padding-right-sm">
             <div class="form row">
                 <div class="col custom-control custom-checkbox">
                     <input class="custom-control-input" type="checkbox" id="leisure">
