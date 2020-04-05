@@ -1,48 +1,28 @@
 $(document).ready(function () {
-    // this._model = {
-    //     GroupId: 1,
-    //     GroupTitle: "آشنایی با مسافر",
-    //     QuestionTitle: "هدف از سفر",
-    //     Answer: {
-    //         MultiSelect: "false",
-    //         Items: []
-    //     }
-    // };
-    // $("#question").load(JSON.parse(),function(responseTxt, statusTxt, xhr){
-    //     if(statusTxt == "success")
-    //       alert("External content loaded successfully!");
-    //     if(statusTxt == "error")
-    //       alert("Error: " + xhr.status + ": " + xhr.statusText);
-    //   });
-    var logfile;
-    $.get("mock.json", function (data) {
-        this._model=JSON.parse(data);
-        
-        $("#question").html(`
-              <label class="col-md-auto  col-form-label ">`+ this._model.Items[1].QuestionTitle +`:</label>
-            <div class="col-md ">
-            <div class="form row">
-                <div class="col custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="leisure">
-                    <label class="custom-control-label" for="leisure">`+ this._model.Items[0].Answer.Items[0].AnswerItemTitle +`</label>
-                </div>
-                <div class="col custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="education">
-                    <label class="custom-control-label" for="education">`+ this._model.Items[1].Answer.Items[1].AnswerItemTitle +`</label>
-                </div>
 
-                <div class="col custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="business">
-                    <label class="custom-control-label" for="business">`+ this._model.Items[0].Answer.Items[2].AnswerItemTitle +`</label>
+    $.get("mock.json", function (data) {
+        this._model = JSON.parse(data);
+        this._model.Items.forEach((item, index) => {
+
+            $("#question").append(`
+                <div class="form-group row" >
+                    <label class="col-md-3  col-form-label ">`+ item.QuestionTitle + `:</label>
+                    <div class="col-md-9 ">
+                        <div class="form row " id="answer` + index + `"> 
+                        </div>
+                    </div>
                 </div>
-                <div class="col custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="other">
-                    <label class="custom-control-label" for="other">`+ this._model.Items[0].Answer.Items[3].AnswerItemTitle +`</label>
-                </div>
-            </div>
-        </div>
-     `)
+            `);
+            item.Answer.Options.forEach(option => {
+                $(`#answer`+ index +``).append(`
+                            <div class="col custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="`+ option.AnswerItemId +`">
+                                <label class="custom-control-label" for="`+ option.AnswerItemId +`">`+ option.AnswerItemTitle + `</label>
+                            </div>
+                `)
+            })
+        });
     });
 
-    
+
 })

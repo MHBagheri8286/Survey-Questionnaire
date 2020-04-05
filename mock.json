@@ -6,7 +6,7 @@
         "QuestionTitle": "هدف از سفر",
         "Answer": {
             "MultiSelect": true,
-            "Items": [{
+            "Options": [{
                     "AnswerItemId": 10,
                     "AnswerItemTitle": "تفریح"
                 },
@@ -32,20 +32,20 @@
         "QuestionTitle": "دلیل سفر با ماهان(حداکثر دو مورد)",
         "Answer": {
             "MultiSelect": true,
-            "Items": [{
-                    "AnswerItemId": 10,
+            "Options": [{
+                    "AnswerItemId": 14,
                     "AnswerItemTitle": "پرواز مستقیم"
                 },
                 {
-                    "AnswerItemId": 11,
+                    "AnswerItemId": 15,
                     "AnswerItemTitle": "سرویس مناسب"
                 },
                 {
-                    "AnswerItemId": 12,
+                    "AnswerItemId": 16,
                     "AnswerItemTitle": "قیمت مناسب"
                 },
                 {
-                    "AnswerItemId": 13,
+                    "AnswerItemId": 17,
                     "AnswerItemTitle": "برنامه پروازی"
                 }
             ]
@@ -58,20 +58,20 @@
         "QuestionTitle": "تعداد سفر با ماهان در سال گذشته",
         "Answer": {
             "MultiSelect": true,
-            "Items": [{
-                    "AnswerItemId": 10,
+            "Options": [{
+                    "AnswerItemId": 18,
                     "AnswerItemTitle": "نداشته ام"
                 },
                 {
-                    "AnswerItemId": 11,
+                    "AnswerItemId": 19,
                     "AnswerItemTitle": "یک بار"
                 },
                 {
-                    "AnswerItemId": 12,
+                    "AnswerItemId": 20,
                     "AnswerItemTitle": "دو بار"
                 },
                 {
-                    "AnswerItemId": 13,
+                    "AnswerItemId": 21,
                     "AnswerItemTitle": "دفعات بیشتر"
                 }
             ]
@@ -85,20 +85,20 @@
         "QuestionTitle": "نحوه خرید بلیط",
         "Answer": {
             "MultiSelect": true,
-            "Items": [{
-                    "AnswerItemId": 10,
+            "Options": [{
+                    "AnswerItemId": 22,
                     "AnswerItemTitle": "دفاتر فروش"
                 },
                 {
-                    "AnswerItemId": 11,
+                    "AnswerItemId": 23,
                     "AnswerItemTitle": "آژانس ها"
                 },
                 {
-                    "AnswerItemId": 12,
+                    "AnswerItemId": 24,
                     "AnswerItemTitle": "لیست انتظار"
                 },
                 {
-                    "AnswerItemId": 13,
+                    "AnswerItemId": 25,
                     "AnswerItemTitle": "سایت ماهان"
                 }
             ]
