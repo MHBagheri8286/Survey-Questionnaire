@@ -1,0 +1,109 @@
+{
+    "Items": [{
+        "GroupId": 1,
+        "GroupTitle": "آشنایی با مسافر",
+        "QuestionId": 1,
+        "QuestionTitle": "هدف از سفر",
+        "Answer": {
+            "MultiSelect": true,
+            "Items": [{
+                    "AnswerItemId": 10,
+                    "AnswerItemTitle": "تفریح"
+                },
+                {
+                    "AnswerItemId": 11,
+                    "AnswerItemTitle": "کار"
+                },
+                {
+                    "AnswerItemId": 12,
+                    "AnswerItemTitle": "تحصیل"
+                },
+                {
+                    "AnswerItemId": 13,
+                    "AnswerItemTitle": "غیره"
+                }
+            ]
+
+        }
+    }, {
+        "GroupId": 1,
+        "GroupTitle": "آشنایی با مسافر",
+        "QuestionId": 2,
+        "QuestionTitle": "دلیل سفر با ماهان(حداکثر دو مورد)",
+        "Answer": {
+            "MultiSelect": true,
+            "Items": [{
+                    "AnswerItemId": 10,
+                    "AnswerItemTitle": "پرواز مستقیم"
+                },
+                {
+                    "AnswerItemId": 11,
+                    "AnswerItemTitle": "سرویس مناسب"
+                },
+                {
+                    "AnswerItemId": 12,
+                    "AnswerItemTitle": "قیمت مناسب"
+                },
+                {
+                    "AnswerItemId": 13,
+                    "AnswerItemTitle": "برنامه پروازی"
+                }
+            ]
+
+        }
+    }, {
+        "GroupId": 1,
+        "GroupTitle": "آشنایی با مسافر",
+        "QuestionId": 3,
+        "QuestionTitle": "تعداد سفر با ماهان در سال گذشته",
+        "Answer": {
+            "MultiSelect": true,
+            "Items": [{
+                    "AnswerItemId": 10,
+                    "AnswerItemTitle": "نداشته ام"
+                },
+                {
+                    "AnswerItemId": 11,
+                    "AnswerItemTitle": "یک بار"
+                },
+                {
+                    "AnswerItemId": 12,
+                    "AnswerItemTitle": "دو بار"
+                },
+                {
+                    "AnswerItemId": 13,
+                    "AnswerItemTitle": "دفعات بیشتر"
+                }
+            ]
+
+        }
+    },
+    {
+        "GroupId": 1,
+        "GroupTitle": "آشنایی با مسافر",
+        "QuestionId": 4,
+        "QuestionTitle": "نحوه خرید بلیط",
+        "Answer": {
+            "MultiSelect": true,
+            "Items": [{
+                    "AnswerItemId": 10,
+                    "AnswerItemTitle": "دفاتر فروش"
+                },
+                {
+                    "AnswerItemId": 11,
+                    "AnswerItemTitle": "آژانس ها"
+                },
+                {
+                    "AnswerItemId": 12,
+                    "AnswerItemTitle": "لیست انتظار"
+                },
+                {
+                    "AnswerItemId": 13,
+                    "AnswerItemTitle": "سایت ماهان"
+                }
+            ]
+
+        }
+    }]
+
+}
