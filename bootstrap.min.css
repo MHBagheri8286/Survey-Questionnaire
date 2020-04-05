@@ -9336,19 +9336,13 @@ button.bg-dark:hover {
     margin-left: auto !important
 }
 
-.padding-right-sm {
+.padding-right {
     padding-right: 2.2rem !important;
 }
 
-@media (min-width:768px) {
-    .padding-right-sm {
-        padding-right: 5.8rem !important;
-    }
-}
-
 @media(min-width:992px) {
-    .padding-right-sm {
-        padding-right: 2.15rem !important;
+    .padding-right {
+        padding-right: 0 !important;
     }
 }
 
