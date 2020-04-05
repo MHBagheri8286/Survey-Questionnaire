@@ -4,8 +4,8 @@ $(document).ready(function () {
         format: 'YYYY/MM/DD'
     });
     $.get("mock.json", function (data) {
-        this._model = JSON.parse(data);
-        this._model.Items.forEach((item, index) => {
+        var model = JSON.parse(data);
+        model.Items.forEach((item, index) => {
 
             $("#question").append(`
                 <div class="form-group row" >
