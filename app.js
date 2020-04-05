@@ -20,7 +20,7 @@ $(document).ready(function () {
                                 <label class="custom-control-label" for="`+ option.AnswerItemId +`">`+ option.AnswerItemTitle + `</label>
                             </div>
                 `)
-            })
+            });
         });
     });
 
