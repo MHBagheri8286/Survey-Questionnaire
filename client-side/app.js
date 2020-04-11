@@ -3,7 +3,7 @@ $(document).ready(function () {
         initialValue: true,
         format: 'YYYY/MM/DD'
     });
-    $.get("mock.json", function (data) {
+    $.get("http://127.0.0.1:8080/mock.json", function (data) {
         var model = JSON.parse(data);
         model.Items.forEach((item, index) => {
 
