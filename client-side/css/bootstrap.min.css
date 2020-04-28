@@ -4,6 +4,11 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+.margin-top {
+    margin-top: 8px;
+}
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -69,7 +74,7 @@ body {
     line-height: 1.5;
     color: #212529;
     direction: rtl;
-    background-color: #fdfdfd
+    background-color: #d9efed
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

@@ -5,17 +5,20 @@
     <title>SurveyQuestionnaire</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link href="persian-datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/App.css">
+    <link href="./css/persian-datepicker.css" rel="stylesheet" />
     <script src="jquery-3.4.1.js"></script>
     <script src="bootstrap.min.js"></script>
 </head>
-<div class="container">
+<div class="container bg-white viewPagePageFields margin-top">
+    <div class="viewPageThemeStripe"></div>
     <form class="text-dark">
-        <div class="form-group row">
+        <div class="form-group row ">
             <label for="inputName" class="col-lg-2 col-md-3 col-form-labal ">نام و نام خانوادگی:</label>
-            <div class="col-lg-4 col-md-3 ">
+            <div class="col-lg-4 col-md-3">
                 <input type="text" class=" form-control mb-2 mb-md-0" id="inputName">
+                <span class="icon-account"></span>
             </div>
             <label for="inputRoute" class="col-lg-2 col-md-3 col-form-labal">مسیر:</label>
             <div class="col-lg-4 col-md-3">
@@ -46,6 +49,7 @@
                 </div>
             </div>
         </div>
+
         <div id="question"></div>
     </form>
 </div>

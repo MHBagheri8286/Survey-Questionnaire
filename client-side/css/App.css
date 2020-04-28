@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icons/icomoon.eot?feive7");
+  src: url("../fonts/icons/icomoon.eot?feive7#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?feive7") format("truetype"), url("../fonts/icons/icomoon.woff?feive7") format("woff"), url("../fonts/icons/icomoon.svg?feive7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account:before {
+  content: "\e900";
+  color: #00756b;
+}
+
+.icon-account-check:before {
+  content: "\e901";
+  color: #00756b;
+}
+
+.icon-airplane:before {
+  content: "\e902";
+  color: #00756b;
+}
+
+.icon-airplane-landing:before {
+  content: "\e903";
+  color: #00756b;
+}
+
+.icon-airplane-takeoff:before {
+  content: "\e904";
+  color: #00756b;
+}
+
+.icon-email-outline:before {
+  content: "\e905";
+  color: #00756b;
+}
+
+.icon-emoji-1-1:before {
+  content: "\e906";
+  color: #00c853;
+}
+
+.icon-emoji-1:before {
+  content: "\e907";
+  color: #bfbfbf;
+}
+
+.icon-emoji-2:before {
+  content: "\e908";
+  color: #08f;
+}
+
+.icon-emoji:before {
+  content: "\e909";
+  color: #bfbfbf;
+}
+
+.icon-file-document-edit-outline:before {
+  content: "\e90a";
+  color: #00756b;
+}
+
+.icon-phone:before {
+  content: "\e90b";
+  color: #00756b;
+}
+
+.icon-sad-1:before {
+  content: "\e90c";
+  color: #bfbfbf;
+}
+
+.icon-sad-2:before {
+  content: "\e90d";
+  color: #ffa200;
+}
+
+.icon-sad-3:before {
+  content: "\e90e";
+  color: #f00;
+}
+
+.icon-sad:before {
+  content: "\e90f";
+  color: #bfbfbf;
+}
+
+.icon-seat-passenger:before {
+  content: "\e910";
+  color: #00756b;
+}
+
+.viewPagePageFields {
+  position: relative;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
+          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
+  -webkit-transition: -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.viewPageThemeStripe {
+  width: 100%;
+  background-color: #009688;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+/*# sourceMappingURL=App.css.map */

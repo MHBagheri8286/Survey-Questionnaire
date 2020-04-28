@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $('#datepicker').pDatepicker({
         initialValue: true,
@@ -9,8 +10,8 @@ $(document).ready(function () {
 
             $("#question").append(`
                 <div class="form-group row" >
-                    <label class="col-md-3  col-form-label ">`+ item.QuestionTitle + `:</label>
-                    <div class="col-md-9 padding-right ">
+                    <label class="col-lg-3 col-form-label ">`+ item.QuestionTitle + `:</label>
+                    <div class="col-lg-9 padding-right ">
                         <div class="row " id="answer` + index + `"> 
                         </div>
                     </div>
