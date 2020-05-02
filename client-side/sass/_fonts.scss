@@ -1,18 +1,63 @@
+@import 'variables';
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icons/icomoon.eot?feive7');
-    src:  url('../fonts/icons/icomoon.eot?feive7#iefix') format('embedded-opentype'),
-      url('../fonts/icons/icomoon.ttf?feive7') format('truetype'),
-      url('../fonts/icons/icomoon.woff?feive7') format('woff'),
-      url('../fonts/icons/icomoon.svg?feive7#icomoon') format('svg');
+  font-family: 'sq-icon';
+  src:  url('../fonts/icons/sq-icon.eot');
+  src:  url('../fonts/icons/sq-icon.eot') format('embedded-opentype'),
+    url('../fonts/icons/sq-icon.ttf') format('truetype'),
+    url('../fonts/icons/sq-icon.woff') format('woff'),
+    url('../fonts/icons/sq-icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+  
+  @font-face {
+    font-family: $iransans-web-font;
+    src:  url('../fonts/iransanc/IRANSans-web.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: block;
   }
+  @font-face {
+    font-family: $iransans-bold-web-font;
+    src:  url('../fonts/iransanc/IRANSans-Bold-web.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: $iransans-light-web-font;
+    src:  url('../fonts/iransanc/IRANSans-Light-web.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: $iransans-ultralight-web-font;
+    src:  url('../fonts/iransanc/IRANSans-UltraLight-web.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: $Roboto-Bold-font;
+    src:  url('../fonts/roboto/Roboto-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: $Roboto-Regular-font;
+    src:  url('../fonts/roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
   
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    font-family: 'sq-icon' !important;
     speak-as: none;
     font-style: normal;
     font-weight: normal;
@@ -25,49 +70,49 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-file-document-edit-outline:before {
+    content: "\e902";
+    color: #00756b;
+  }
   .icon-account:before {
+    content: "\e903";
+    color: #00756b;
+  }
+  .icon-airplane:before {
     content: "\e900";
     color: #00756b;
   }
   .icon-account-check:before {
-    content: "\e901";
-    color: #00756b;
-  }
-  .icon-airplane:before {
-    content: "\e902";
-    color: #00756b;
-  }
-  .icon-airplane-landing:before {
-    content: "\e903";
-    color: #00756b;
-  }
-  .icon-airplane-takeoff:before {
     content: "\e904";
     color: #00756b;
   }
-  .icon-email-outline:before {
+  .icon-airplane-landing:before {
+    content: "\e901";
+    color: #00756b;
+  }
+  .icon-airplane-takeoff:before {
     content: "\e905";
     color: #00756b;
   }
-  .icon-emoji-1-1:before {
+  .icon-email-outline:before {
     content: "\e906";
+    color: #00756b;
+  }
+  .icon-emoji-1-1:before {
+    content: "\e907";
     color: #00c853;
   }
   .icon-emoji-1:before {
-    content: "\e907";
+    content: "\e908";
     color: #bfbfbf;
   }
   .icon-emoji-2:before {
-    content: "\e908";
+    content: "\e909";
     color: #08f;
   }
   .icon-emoji:before {
-    content: "\e909";
-    color: #bfbfbf;
-  }
-  .icon-file-document-edit-outline:before {
     content: "\e90a";
-    color: #00756b;
+    color: #bfbfbf;
   }
   .icon-phone:before {
     content: "\e90b";
@@ -91,6 +136,10 @@
   }
   .icon-seat-passenger:before {
     content: "\e910";
+    color: #00756b;
+  }
+  .icon-calendar:before {
+    content: "\e911";
     color: #00756b;
   }
   

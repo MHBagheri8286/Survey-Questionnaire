@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -263,7 +264,15 @@ textarea {
 
 button,
 input {
-    overflow: visible
+    overflow: visible;
+    
+}
+input::placeholder{
+    text-align: right;
+    color: #707070 !important;
+}
+input.inputfocus-left:focus{
+    text-align: left;
 }
 
 button,
@@ -605,7 +614,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1140px
+        max-width: 1300px
     }
 }
 
@@ -655,7 +664,7 @@ pre code {
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1140px
+        max-width: 1300px
     }
 }
 
@@ -2341,14 +2350,14 @@ pre code {
     display: block;
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
+    padding: .375rem .25rem;
+    font-size: .9rem;
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: 1px solid #bfbfbf;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
@@ -2370,11 +2379,11 @@ pre code {
 }
 
 .form-control:focus {
-    color: #495057;
+    /* color: #495057;
     background-color: #fff;
-    border-color: #28a598;
+    border-color: #28a598; */
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(25, 128, 118, 0.25);
+    /* box-shadow: 0 0 0 .2rem rgba(25, 128, 118, 0.25); */
 }
 
 .form-control::-webkit-input-placeholder {
@@ -2486,7 +2495,7 @@ textarea.form-control {
 }
 
 .form-group {
-    margin-bottom: 1rem
+    margin-bottom: 1.4rem
 }
 
 .form-text {
@@ -4051,8 +4060,8 @@ input[type=submit].btn-block {
 
 .input-group>.custom-select:not(:first-child),
 .input-group>.form-control:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
 }
 
 .input-group>.custom-file {
@@ -4114,7 +4123,7 @@ input[type=submit].btn-block {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    padding: .375rem .75rem;
+    padding: .375rem .45rem;
     margin-bottom: 0;
     font-size: 1rem;
     font-weight: 400;
@@ -4122,8 +4131,9 @@ input[type=submit].btn-block {
     color: #495057;
     text-align: center;
     white-space: nowrap;
-    background-color: #e9ecef;
-    border: 1px solid #ced4da;
+    /* background-color: #e9ecef; */
+    border: 1px solid #bfbfbf;
+    border-left: none;
     border-radius: .25rem
 }
 
@@ -4177,8 +4187,8 @@ input[type=submit].btn-block {
 .input-group>.input-group-append:not(:last-child)>.input-group-text,
 .input-group>.input-group-prepend>.btn,
 .input-group>.input-group-prepend>.input-group-text {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
 }
 
 .input-group>.input-group-append>.btn,
@@ -4195,7 +4205,9 @@ input[type=submit].btn-block {
     position: relative;
     display: block;
     min-height: 1.5rem;
-    padding-left: 1.5rem
+    padding-left: 1.5rem;
+    /**/
+    height: 24px;
 }
 
 .custom-control-inline {
@@ -4219,11 +4231,9 @@ input[type=submit].btn-block {
     background-color: #198076
 }
 
-.custom-control-input:focus~.custom-control-label::before {
-    box-shadow: 0 0 0 .2rem rgba(0, 80, 13, 0.11)
-}
 
-.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+
+/* .custom-control-input:focus:not(:checked)~.custom-control-label::before {
     border-color: #0f7d73
 }
 
@@ -4231,7 +4241,7 @@ input[type=submit].btn-block {
     color: #fff;
     background-color: #b3d7ff;
     border-color: #b3d7ff
-}
+} */
 
 .custom-control-input:disabled~.custom-control-label,
 .custom-control-input[disabled]~.custom-control-label {
@@ -4244,19 +4254,23 @@ input[type=submit].btn-block {
 }
 
 .custom-control-label {
+    line-height: 20px;
     position: relative;
     cursor: pointer;
     margin-bottom: 0;
-    vertical-align: top
+    vertical-align: top;
+    color: #707070;
+    /**/
+    font-size: .9rem;
 }
 
 .custom-control-label::before {
     position: absolute;
-    top: .25rem;
-    right: -1.20rem;
+    top: 0;
+    right: -25px;
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 20px;
+    height: 20px;
     pointer-events: none;
     content: "";
     background-color: #fff;
@@ -4265,11 +4279,11 @@ input[type=submit].btn-block {
 
 .custom-control-label::after {
     position: absolute;
-    top: .25rem;
-    right: -1.20rem;
+    top: 0;
+    right: -25px;
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 20px;
+    height: 20px;
     content: "";
     background: no-repeat 50%/50% 50%
 }
@@ -7409,23 +7423,23 @@ button.bg-dark:hover {
 }
 
 .border {
-    border: 1px solid #dee2e6 !important
+    border: 1px solid #bfbfbf !important
 }
 
 .border-top {
-    border-top: 1px solid #dee2e6 !important
+    border-top: 1px solid #bfbfbf !important
 }
 
 .border-right {
-    border-right: 1px solid #dee2e6 !important
+    border-right: 1px solid #bfbfbf !important
 }
 
 .border-bottom {
-    border-bottom: 1px solid #dee2e6 !important
+    border-bottom: 1px solid #bfbfbf !important
 }
 
 .border-left {
-    border-left: 1px solid #dee2e6 !important
+    border-left: 1px solid #bfbfbf !important
 }
 
 .border-0 {
@@ -7449,7 +7463,7 @@ button.bg-dark:hover {
 }
 
 .border-primary {
-    border-color: #007bff !important
+    border-color: #bfbfbf !important
 }
 
 .border-secondary {
@@ -9341,8 +9355,10 @@ button.bg-dark:hover {
     margin-left: auto !important
 }
 
-.padding-right {
-    padding-right: 2.2rem !important;
+
+.padding-right-large{
+    padding-right: 25px !important;
+    /* padding-left: 1.25rem !important; */
 }
 
 @media(min-width:992px) {

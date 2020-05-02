@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icons/icomoon.eot?feive7");
-  src: url("../fonts/icons/icomoon.eot?feive7#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?feive7") format("truetype"), url("../fonts/icons/icomoon.woff?feive7") format("woff"), url("../fonts/icons/icomoon.svg?feive7#icomoon") format("svg");
+  src: url("../fonts/icons/sq-icon.eot");
+  src: url("../fonts/icons/sq-icon.eot") format("embedded-opentype"), url("../fonts/icons/sq-icon.ttf") format("truetype"), url("../fonts/icons/sq-icon.woff") format("woff"), url("../fonts/icons/sq-icon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -127,5 +127,26 @@
   left: 0;
   position: absolute;
   top: 0;
+}
+
+.viewpage {
+  background-color: #f3f3f3;
+}
+
+.viewpage form {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.py-3 {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 /*# sourceMappingURL=App.css.map */

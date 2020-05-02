@@ -1,7 +1,55 @@
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icons/icomoon.eot?feive7");
-  src: url("../fonts/icons/icomoon.eot?feive7#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?feive7") format("truetype"), url("../fonts/icons/icomoon.woff?feive7") format("woff"), url("../fonts/icons/icomoon.svg?feive7#icomoon") format("svg");
+  font-family: 'sq-icon';
+  src: url("../fonts/icons/sq-icon.eot");
+  src: url("../fonts/icons/sq-icon.eot") format("embedded-opentype"), url("../fonts/icons/sq-icon.ttf") format("truetype"), url("../fonts/icons/sq-icon.woff") format("woff"), url("../fonts/icons/sq-icon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-web";
+  src: url("../fonts/iransanc/IRANSans-web.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-Bold-web";
+  src: url("../fonts/iransanc/IRANSans-Bold-web.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-Light-web";
+  src: url("../fonts/iransanc/IRANSans-Light-web.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-UltraLight-web";
+  src: url("../fonts/iransanc/IRANSans-UltraLight-web.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "roboto-bold", sans-serif;
+  src: url("../fonts/roboto/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "roboto-regular", sans-serif;
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -9,7 +57,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'sq-icon' !important;
   speak-as: none;
   font-style: normal;
   font-weight: normal;
@@ -21,59 +69,59 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-file-document-edit-outline:before {
+  content: "\e902";
+  color: #00756b;
+}
+
 .icon-account:before {
+  content: "\e903";
+  color: #00756b;
+}
+
+.icon-airplane:before {
   content: "\e900";
   color: #00756b;
 }
 
 .icon-account-check:before {
-  content: "\e901";
-  color: #00756b;
-}
-
-.icon-airplane:before {
-  content: "\e902";
-  color: #00756b;
-}
-
-.icon-airplane-landing:before {
-  content: "\e903";
-  color: #00756b;
-}
-
-.icon-airplane-takeoff:before {
   content: "\e904";
   color: #00756b;
 }
 
-.icon-email-outline:before {
+.icon-airplane-landing:before {
+  content: "\e901";
+  color: #00756b;
+}
+
+.icon-airplane-takeoff:before {
   content: "\e905";
   color: #00756b;
 }
 
-.icon-emoji-1-1:before {
+.icon-email-outline:before {
   content: "\e906";
+  color: #00756b;
+}
+
+.icon-emoji-1-1:before {
+  content: "\e907";
   color: #00c853;
 }
 
 .icon-emoji-1:before {
-  content: "\e907";
+  content: "\e908";
   color: #bfbfbf;
 }
 
 .icon-emoji-2:before {
-  content: "\e908";
+  content: "\e909";
   color: #08f;
 }
 
 .icon-emoji:before {
-  content: "\e909";
-  color: #bfbfbf;
-}
-
-.icon-file-document-edit-outline:before {
   content: "\e90a";
-  color: #00756b;
+  color: #bfbfbf;
 }
 
 .icon-phone:before {
@@ -106,6 +154,11 @@
   color: #00756b;
 }
 
+.icon-calendar:before {
+  content: "\e911";
+  color: #00756b;
+}
+
 .viewPagePageFields {
   position: relative;
   border: 1px solid #dadce0;
@@ -127,5 +180,53 @@
   left: 0;
   position: absolute;
   top: 0;
+}
+
+.viewpage form {
+  direction: rtl !important;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.viewpage h1 {
+  margin-bottom: 0 !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffa200;
+}
+
+.viewpage .input-group:focus-within {
+  background-color: #f3f3f3;
+  border-radius: .25rem;
+  outline: 0;
+}
+
+.viewpage .input-group .font-family {
+  font-family: "roboto-bold", sans-serif;
+}
+
+.viewpage .input-group .rounded-right-0 {
+  font-size: .9rem;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #f3f3f3;
+  font-family: "IRANSans-web";
+}
+
+.py-3 {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 /*# sourceMappingURL=App.css.map */
