@@ -1,8 +1,24 @@
-// colors
+//border
+@mixin border($color: black, $width: 1px, $style: solid) {
+    border: $width $style $color;
+  }
+@mixin boxshadow($horizontal, $vertical, $blur, $spread, $color) {
+    box-shadow: $horizontal $vertical $blur $spread $color;
+}
 
+//breakpoints
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-extralarge: 1200px;
+
+
+// colors
 $backgroundcolor: #f3f3f3 ;
 $headercolor: #ffa200;
 $textinputcolor: #707070;
+$darkgreen: #014d46;
+$green: #00756b;
 
 //fonts
 $iransans-bold-web-font: 'IRANSans-Bold-web';

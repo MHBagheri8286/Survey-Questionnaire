@@ -35,6 +35,7 @@
   font-family: "IRANSans-UltraLight-web";
   src: url("../fonts/iransanc/IRANSans-UltraLight-web.ttf");
   font-weight: normal;
+  font-stretch: normal;
   font-style: normal;
   font-display: block;
 }
@@ -55,12 +56,12 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'sq-icon' !important;
-  speak-as: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
@@ -104,13 +105,18 @@
   color: #00756b;
 }
 
+.icon-emoji-1:before {
+  content: "\e908";
+  color: #bfbfbf;
+}
+
 .icon-emoji-1-1:before {
   content: "\e907";
   color: #00c853;
 }
 
-.icon-emoji-1:before {
-  content: "\e908";
+.icon-emoji:before {
+  content: "\e90a";
   color: #bfbfbf;
 }
 
@@ -119,14 +125,14 @@
   color: #08f;
 }
 
-.icon-emoji:before {
-  content: "\e90a";
-  color: #bfbfbf;
-}
-
 .icon-phone:before {
   content: "\e90b";
   color: #00756b;
+}
+
+.icon-sad:before {
+  content: "\e90f";
+  color: #bfbfbf;
 }
 
 .icon-sad-1:before {
@@ -144,11 +150,6 @@
   color: #f00;
 }
 
-.icon-sad:before {
-  content: "\e90f";
-  color: #bfbfbf;
-}
-
 .icon-seat-passenger:before {
   content: "\e910";
   color: #00756b;
@@ -159,41 +160,18 @@
   color: #00756b;
 }
 
-.viewPagePageFields {
-  position: relative;
-  border: 1px solid #dadce0;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
-          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
-  -webkit-transition: -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.viewPageThemeStripe {
-  width: 100%;
-  background-color: #009688;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  height: 10px;
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
 .viewpage form {
-  direction: rtl !important;
+  direction: rtl;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
 }
 
-.viewpage h1 {
-  margin-bottom: 0 !important;
-  font-size: 16px;
-  font-weight: normal;
+.viewpage .info-section h1 {
+  margin-bottom: 0;
+  font-size: 11px;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.75;
@@ -202,20 +180,175 @@
   color: #ffa200;
 }
 
-.viewpage .input-group:focus-within {
+@media screen and (min-width: 576px) {
+  .viewpage .info-section h1 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .info-section h1 {
+    font-size: 14px;
+  }
+}
+
+.viewpage .info-section .input-group:focus-within {
   background-color: #f3f3f3;
   border-radius: .25rem;
   outline: 0;
 }
 
-.viewpage .input-group .font-family {
+.viewpage .info-section .input-group .font-family {
   font-family: "roboto-bold", sans-serif;
+  font-size: 11px;
 }
 
-.viewpage .input-group .rounded-right-0 {
-  font-size: .9rem;
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
+@media screen and (min-width: 576px) {
+  .viewpage .info-section .input-group .font-family {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .info-section .input-group .font-family {
+    font-size: 14px;
+  }
+}
+
+.viewpage .info-section .input-group .rounded-right-0 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.viewpage .question-section h1 {
+  margin-bottom: 0 !important;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: right;
+  color: #014d46;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section h1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .question-section h1 {
+    font-size: 15px;
+  }
+}
+
+.viewpage .question-section .line {
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  margin-left: 20px;
+}
+
+.viewpage .question-section .padding-40 {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section .padding-40 {
+    padding-right: 15px;
+    padding-left: 25px;
+  }
+}
+
+.viewpage .question-section h1.question-header {
+  font-size: 13px;
+  font-weight: bold;
+  color: #00756b;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section h1.question-header {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .question-section h1.question-header {
+    font-size: 15px;
+  }
+}
+
+.viewpage .question-section .question-state > div {
+  font-size: 10px;
+  padding: 0;
+  text-align: center;
+  color: #707070;
+}
+
+.viewpage .question-section .question-emoji > div {
+  line-height: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section .question-emoji > div {
+    font-size: 22px;
+  }
+}
+
+.viewpage .question-section .question-emoji label {
+  cursor: pointer;
+}
+
+.viewpage .question-section .btn-group label {
+  font-family: sq-icon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.viewpage .question-section .question-title {
+  font-size: 11px;
+  font-weight: normal;
+  color: #707070;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section .question-title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .question-section .question-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .viewpage .question-section .question-title {
+    font-size: 13px;
+  }
+}
+
+.viewpage .question-section .dot-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0.5px dashed rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section .dot-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 body,
@@ -225,8 +358,7 @@ html {
   font-family: "IRANSans-web";
 }
 
-.py-3 {
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+.blue::before {
+  color: red;
 }
 /*# sourceMappingURL=App.css.map */
