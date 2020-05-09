@@ -17,9 +17,26 @@ $(document).ready(function () {
         model.Items.forEach((item, index) => {
             (item.GroupId === 1) ? getInfoQuestion(item, index) : getStateQuestion(item, index);
         });
+    });
 
+    $('body').on('click','input:radio',function () {
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-great');
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-good');
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-soso');
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-sad');
 
-
+        if ($(this).parent().hasClass("icon-great")) {
+            $(this).parent().addClass('active-great');
+        }
+        if ($(this).parent().hasClass("icon-good")) {
+            $(this).parent().addClass('active-good');
+        }
+        if ($(this).parent().hasClass("icon-soso")) {
+            $(this).parent().addClass('active-soso');
+        }
+        if ($(this).parent().hasClass("icon-sad")) {
+            $(this).parent().addClass('active-sad');
+        }
     });
 
     const getInfoQuestion = (item, index) => {
@@ -100,26 +117,6 @@ $(document).ready(function () {
         });
     }
     
-    $('input:radio').click(function () {
-        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-great');
-        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-good');
-        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-soso');
-        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-sad');
-
-        if ($(this).parent().hasClass("icon-great")) {
-            $(this).parent().addClass('active-great');
-        }
-        if ($(this).parent().hasClass("icon-good")) {
-            $(this).parent().addClass('active-good');
-        }
-        if ($(this).parent().hasClass("icon-soso")) {
-            $(this).parent().addClass('active-soso');
-        }
-        if ($(this).parent().hasClass("icon-sad")) {
-            $(this).parent().addClass('active-sad');
-        }
-
-
-    });
+    
 
 })

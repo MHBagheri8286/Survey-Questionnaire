@@ -1,7 +1,6 @@
-@import 'variables';
+@import "variables";
 
 .viewpage {
-
     form {
         direction: rtl;
         border-radius: 15px;
@@ -31,19 +30,15 @@
         }
 
         .input-group:focus-within {
-
             .input-group-prepend {
                 background-color: $backgroundcolor;
 
                 border-radius: 0.25rem;
                 outline: 0;
             }
-
-        
         }
 
         .input-group {
-
             .font-family {
                 font-family: $Roboto-Bold-font;
                 font-size: 11px;
@@ -58,12 +53,10 @@
             }
 
             .rounded-right-0 {
-
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
             }
         }
-
     }
 
     .question-section {
@@ -88,7 +81,7 @@
         }
 
         .line {
-            @include border(rgba(0, 0, 0, 0.25), .5px);
+            @include border(rgba(0, 0, 0, 0.25), 0.5px);
             margin-left: 20px;
         }
 
@@ -119,59 +112,62 @@
             @media screen and (min-width: $break-medium) {
                 font-size: 15px;
             }
-
         }
 
         .question-state {
-            &>div {
+            & > div {
                 font-size: 10px;
                 padding: 0;
                 text-align: center;
                 color: $textinputcolor;
             }
-
         }
 
         .question-emoji {
-
-            &>label {
+            & > label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 line-height: 0;
                 padding: 0;
-                text-align: center;
+                //text-align: center;
                 font-size: 18px;
+                
                 cursor: pointer;
                 color: #bfbfbf;
-                input[type=radio] {
+                @media screen and (min-width: $break-small) {
+                    font-size: 21px;
+                }
+
+                input[type="radio"] {
                     position: absolute;
                     cursor: pointer;
-                    top: -10px;
-                    right: 8px;
-                    width: 22px;
-                    height: 22px;
+                    // top: -10px;
+                    // right: 8px;
+                    width: 25px;
+                    height: 25px;
+                    //z-index: -1;
                     opacity: 0;
                 }
-                @media screen and (min-width: $break-small) {
-                    font-size: 22px;
-                }
-
             }
 
-            &>label.active-great {
+            & > label.active-great {
                 color: #00c853;
+                font-weight: bold;
             }
-            &>label.active-good {
+            & > label.active-good {
                 color: #08f;
+                font-weight: bold;
             }
-            &>label.active-soso {
+            & > label.active-soso {
                 color: #ffa200;
+                font-weight: bold;
             }
-            &>label.active-sad {
+            & > label.active-sad {
                 color: #f00;
+                font-weight: bold;
             }
         }
-
-
-
     }
 
     .btn-group label {
@@ -199,20 +195,17 @@
         @media screen and (min-width: $break-large) {
             font-size: 13px;
         }
-
     }
 
     .dot-line {
         display: flex;
-        @include border(rgba(0, 0, 0, 0.25), .5px, dashed);
+        @include border(rgba(0, 0, 0, 0.25), 0.5px, dashed);
 
         @media screen and (min-width: $break-small) {
             display: flex;
         }
-
     }
 }
-
 
 body,
 html {
