@@ -117,91 +117,9 @@
             "Options": [{
                     "AnswerItemId": 26,
                     "AnswerItemTitle": "رفتار و کارآمدی کارکنان"
-                },
-                {
-                    "AnswerItemId": 27,
-                    "AnswerItemTitle": "سهولت در خرید اینترنتی"
-                },
-                {
-                    "AnswerItemId": 28,
-                    "AnswerItemTitle": "مدت انتظار و پاسخگویی تلفنی جهت رزرو بلیت"
                 }
             ]
 
-        }
-    },
-    {
-        "GroupId": 2,
-        "GroupTitle": "سؤالات نظرخواهی",
-        "QuestionId": 2,
-        "QuestionTitle": "خدمات فرودگاهی",
-        "Answer": {
-            "MultiSelect": false,
-            "Options": [{
-                "AnswerItemId": 31,
-                "AnswerItemTitle": "رفتار و دقت کارکنان"
-            },
-            {
-                "AnswerItemId": 32,
-                "AnswerItemTitle": "مراحل پذیرش مسافر"
-            },
-            {
-                "AnswerItemId": 33,
-                "AnswerItemTitle": "نحوه انتقال از سالن ترانزیت به هواپیما"
-            }
-        ]
-        }
-    },
-    {
-        "GroupId": 2,
-        "GroupTitle": "سؤالات نظرخواهی",
-        "QuestionId": 2,
-        "QuestionTitle": "سرگرمی",
-        "Answer": {
-            "MultiSelect": false,
-            "Options": [{
-                "AnswerItemId": 34,
-                "AnswerItemTitle": "رضایت از نشریات"
-            },
-            {
-                "AnswerItemId": 35,
-                "AnswerItemTitle": "محتوای مجله پرواز ماهان"
-            },
-            {
-                "AnswerItemId": 36,
-                "AnswerItemTitle": "رضایت شما از فیلم، کلیپ و تصاویر پخش شده"
-            },
-            {
-                "AnswerItemId": 37,
-                "AnswerItemTitle": "نحوه انتقال از سالن ترانزیت به هواپیما"
-            },
-            {
-                "AnswerItemId": 38,
-                "AnswerItemTitle": "سرگرمی کودکان"
-            },
-            {
-                "AnswerItemId": 39,
-                "AnswerItemTitle": "کیفیت صدا و تصویر"
-            }
-        ]
-        }
-    },
-    {
-        "GroupId": 2,
-        "GroupTitle": "سؤالات نظرخواهی",
-        "QuestionId": 2,
-        "QuestionTitle": "اعلانات",
-        "Answer": {
-            "MultiSelect": false,
-            "Options": [{
-                "AnswerItemId": 29,
-                "AnswerItemTitle": "کیفیت صدا و ارائه اطلاعات ( خلبان)"
-            },
-            {
-                "AnswerItemId": 30,
-                "AnswerItemTitle": "کیفیت صدا و ارائه اطلاعات ( مهماندار )"
-            }
-        ]
         }
     }
      

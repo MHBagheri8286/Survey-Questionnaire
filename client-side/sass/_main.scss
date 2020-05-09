@@ -32,10 +32,14 @@
 
         .input-group:focus-within {
 
-            background-color: $backgroundcolor;
+            .input-group-prepend {
+                background-color: $backgroundcolor;
 
-            border-radius: .25rem;
-            outline: 0;
+                border-radius: 0.25rem;
+                outline: 0;
+            }
+
+        
         }
 
         .input-group {
@@ -115,7 +119,7 @@
             @media screen and (min-width: $break-medium) {
                 font-size: 15px;
             }
-        
+
         }
 
         .question-state {
@@ -130,68 +134,91 @@
 
         .question-emoji {
 
-            &>div {
+            &>label {
                 line-height: 0;
                 padding: 0;
                 text-align: center;
                 font-size: 18px;
-
+                cursor: pointer;
+                color: #bfbfbf;
+                input[type=radio] {
+                    position: absolute;
+                    cursor: pointer;
+                    top: -10px;
+                    right: 8px;
+                    width: 22px;
+                    height: 22px;
+                    opacity: 0;
+                }
                 @media screen and (min-width: $break-small) {
                     font-size: 22px;
                 }
 
             }
 
-            label {
-                cursor: pointer;
+            &>label.active-great {
+                color: #00c853;
             }
-
+            &>label.active-good {
+                color: #08f;
+            }
+            &>label.active-soso {
+                color: #ffa200;
+            }
+            &>label.active-sad {
+                color: #f00;
+            }
         }
 
-        .btn-group label {
-            font-family: sq-icon;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
+
+
+    }
+
+    .btn-group label {
+        font-family: sq-icon;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+    }
+
+    .question-title {
+        font-size: 11px;
+        font-weight: normal;
+        color: $textinputcolor;
+
+        @media screen and (min-width: $break-small) {
+            font-size: 12px;
         }
 
-        .question-title {
-            font-size: 11px;
-            font-weight: normal;
-            color: $textinputcolor;
-
-            @media screen and (min-width: $break-small) {
-                font-size: 12px;
-            }
-
-            @media screen and (min-width: $break-medium) {
-                font-size: 14px;
-            }
-            @media screen and (min-width: $break-large) {
-                font-size: 13px;
-            }
-            
+        @media screen and (min-width: $break-medium) {
+            font-size: 14px;
         }
 
-        .dot-line {
+        @media screen and (min-width: $break-large) {
+            font-size: 13px;
+        }
+
+    }
+
+    .dot-line {
+        display: flex;
+        @include border(rgba(0, 0, 0, 0.25), .5px, dashed);
+
+        @media screen and (min-width: $break-small) {
             display: flex;
-            @include border(rgba(0, 0, 0, 0.25), .5px, dashed);
-
-            @media screen and (min-width: $break-small) {
-                display: flex;
-            }
-
         }
+
     }
 }
+
 
 body,
 html {
     height: 100%;
     background-color: $backgroundcolor;
-    font-family: $iransans-web-font;
+    font-family: $iranyekan-light;
 }
 
 .blue::before {

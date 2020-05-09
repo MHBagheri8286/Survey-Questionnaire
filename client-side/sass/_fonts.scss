@@ -46,6 +46,32 @@
 }
 
 @font-face {
+  font-family: $iranyekan-light;
+  src: url('../fonts/iranyekan/IRANYekanLight.ttf');
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: $iranyekan-bold;
+  src: url('../fonts/iranyekan/IRANYekanBold.ttf');
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: $iranyekan-regular;
+  src: url('../fonts/iranyekan/IRANYekanRegular.ttf');
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
   font-family: $Roboto-Bold-font;
   src: url('../fonts/roboto/Roboto-Bold.ttf');
   font-weight: normal;
@@ -112,49 +138,49 @@
   color: #00756b;
 }
 
-.icon-emoji-1:before {
+.icon-great:before {
   content: "\e908";
-  color: #bfbfbf;
+  //color: #bfbfbf;
 }
 
-.icon-emoji-1-1:before {
-  content: "\e907";
-  color: #00c853;
-}
+// .icon-emoji-great:before {
+//   content: "\e907";
+//   color: #00c853;
+// }
 
-.icon-emoji:before {
+.icon-good:before {
   content: "\e90a";
-  color: #bfbfbf;
+  //color: #bfbfbf;
 }
-.icon-emoji-2:before {
-  content: "\e909";
-  color: #08f;
-}
+// .icon-emoji-2:before {
+//   content: "\e909";
+//   color: #08f;
+// }
 
 .icon-phone:before {
   content: "\e90b";
   color: #00756b;
 }
 
-.icon-sad:before {
+.icon-soso:before {
   content: "\e90f";
-  color: #bfbfbf;
+  //color: #bfbfbf;
 }
 
-.icon-sad-1:before {
+.icon-sad:before {
   content: "\e90c";
-  color: #bfbfbf;
+  //color: #bfbfbf;
 }
 
-.icon-sad-2:before {
-  content: "\e90d";
-  color: #ffa200;
-}
+// .icon-sad-2:before {
+//   content: "\e90d";
+//   color: #ffa200;
+// }
 
-.icon-sad-3:before {
-  content: "\e90e";
-  color: #f00;
-}
+// .icon-sad-3:before {
+//   content: "\e90e";
+//   color: #f00;
+// }
 
 
 

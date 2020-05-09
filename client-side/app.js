@@ -7,36 +7,8 @@ $(document).ready(function () {
         format: 'YYYY/MM/DD'
     });
 
-    //radio button 
-    $('label.icon-emoji-1').click(function () {
-
-        $(this).toggleClass('icon-emoji-1-1');
-        $('label.icon-emoji').removeClass('icon-emoji-2');
-        $('label.icon-sad').removeClass('icon-sad-2');
-        $('label.icon-sad-1').removeClass('icon-sad-3');
-    });
-    $('label.icon-emoji').click(function () {
-
-        $(this).toggleClass('icon-emoji-2');
-        $('label.icon-emoji-1').removeClass('icon-emoji-1-1');
-        $('label.icon-sad').removeClass('icon-sad-2');
-        $('label.icon-sad-1').removeClass('icon-sad-3');
-    });
-    $('label.icon-sad').click(function () {
-
-        $(this).toggleClass('icon-sad-2');
-        $('label.icon-emoji').removeClass('icon-emoji-2');
-        $('label.icon-emoji-1').removeClass('icon-emoji-1-1');
-        $('label.icon-sad-1').removeClass('icon-sad-3');
-    });
-
-    $('label.icon-sad-1').click(function () {
-
-        $(this).toggleClass('icon-sad-3');
-        $('label.icon-emoji').removeClass('icon-emoji-2');
-        $('label.icon-emoji-1').removeClass('icon-emoji-1-1');
-        $('label.icon-sad').removeClass('icon-sad-2');
-    });
+    //radio button
+   
 
     // get data from server
     $.get("http://127.0.0.1:8080/mock.json", function (data) {
@@ -100,39 +72,54 @@ $(document).ready(function () {
             
                 <div class="col-12">
                     <div class="form-group row mb-2">
-                    <div class="col-auto pl-2 question-title" id="` + option.AnswerItemId + `">` + option.AnswerItemTitle + `</div>
+                    <div class="col-auto pl-2 question-title" id="AnswerTitle` + option.AnswerItemId + `">` + option.AnswerItemTitle + `</div>
                     <div class="col dot-line"></div>
                     <div class="col-3 col-sm-3 col-md-3">
                         <div class="row question-emoji" data-toggle="buttons">
-                            <div class="col-3 emoji-great">
-                                <input type="radio" name="options" id="option1" autocomplete="off">
-                                <label for="options1" name="great" class="icon-emoji-1">
-                                </label>
-                            </div>
+                            <label class="col-3 icon-great">
+                                <input type="radio" name="options` + option.AnswerItemId + `" value="option1">
+                            </label>
+                            
+                            <label class="col-3 icon-good">
+                                <input type="radio" name="options` + option.AnswerItemId + `" value="option2">
+                            </label>
+                            
+                            <label class="col-3 icon-soso">
+                                <input type="radio" name="options` + option.AnswerItemId + `" value="option3" >
+                            </label>
 
-                            <div class="col-3 emoji-good">
-                                <input type="radio" name="options" id="option2" autocomplete="off">
-                                <label for="options2" name="good" class="icon-emoji">
-                                </label>
-                            </div>
-                            <div class="col-3 emoji-soso">
-                                <input type="radio" name="options" id="option3" autocomplete="off">
-                                <label for="options3" name="soso" class="icon-sad">
-                                </label>
-                            </div>
-                            <div class="col-3 emoji-sad">
-                                <input type="radio" name="options" id="option4" autocomplete="off">
-                                <label for="options4" name="sad" class="icon-sad-1">
-                                </label>
-                            </div>
+                            <label class="col-3 icon-sad">
+                                <input type="radio" name="options` + option.AnswerItemId + `" value="option4" >
+                            </label>
                         </div>
                     </div>
                 </div>
-                </div>
+            
             
             `)
         });
     }
+    
+    $('input:radio').click(function () {
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-great');
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-good');
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-soso');
+        $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active-sad');
 
+        if ($(this).parent().hasClass("icon-great")) {
+            $(this).parent().addClass('active-great');
+        }
+        if ($(this).parent().hasClass("icon-good")) {
+            $(this).parent().addClass('active-good');
+        }
+        if ($(this).parent().hasClass("icon-soso")) {
+            $(this).parent().addClass('active-soso');
+        }
+        if ($(this).parent().hasClass("icon-sad")) {
+            $(this).parent().addClass('active-sad');
+        }
+
+
+    });
 
 })
