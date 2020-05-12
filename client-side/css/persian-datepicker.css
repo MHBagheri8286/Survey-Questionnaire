@@ -5,8 +5,8 @@
 ** Under MIT license 
 */
 @font-face {
-    font-family: 'iransans-web-font';
-    src:  url('../fonts/iransanc/IRANSans-web.ttf');
+    font-family: 'iranyekan-light';
+    src:  url('../fonts/iranyekan/IRANYekanLight.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -150,7 +150,7 @@
 }
 
 .datepicker-plot-area {
-	font-family: iransans-web-font;
+	font-family: iranyekan-light;
 	box-sizing: border-box;
 	overflow: hidden;
 	font-size: 14px;
@@ -457,7 +457,7 @@
 	width: 100%;
 	border-radius: 5px;
 	float: left;
-	background-color: #e9ecef;
+	background-color: #f3f3f3;
 }
 
 .datepicker-plot-area .datepicker-navigator .pwt-btn-next,

@@ -1,4 +1,5 @@
 @import "variables";
+@import "animation";
 
 .viewpage {
     form {
@@ -30,11 +31,15 @@
         }
 
         .input-group:focus-within {
+
             .input-group-prepend {
                 background-color: $backgroundcolor;
-
                 border-radius: 0.25rem;
                 outline: 0;
+                // @include fadeinInput-backcolor(#fff, $backgroundcolor);
+                // animation: fadeinInput-backcolor .5s linear;
+
+                transition: background-color .3s linear;
             }
         }
 
@@ -85,13 +90,13 @@
             margin-left: 20px;
         }
 
-        .padding-40 {
+        .padding-question {
             padding-right: 0;
-            padding-left: 10px;
+            padding-left: 0;
 
             @media screen and (min-width: $break-small) {
                 padding-right: 15px;
-                padding-left: 25px;
+                padding-left: 15px;
             }
 
             @media screen and (min-width: $break-medium) {
@@ -115,7 +120,7 @@
         }
 
         .question-state {
-            & > div {
+            &>div {
                 font-size: 10px;
                 padding: 0;
                 text-align: center;
@@ -123,20 +128,25 @@
             }
         }
 
-        .question-emoji {
-            & > label {
+        .emoji-box {
+            &>label {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 line-height: 0;
-                padding: 0;
+                //padding: 0;
                 //text-align: center;
                 font-size: 18px;
-                
+                font-weight: 100;
+
                 cursor: pointer;
-                color: #bfbfbf;
+                color: $emojicolor;
+
                 @media screen and (min-width: $break-small) {
                     font-size: 21px;
+                }
+                @media screen and (min-width: $break-medium) {
+                    font-size: 23px;
                 }
 
                 input[type="radio"] {
@@ -151,38 +161,82 @@
                 }
             }
 
-            & > label.active-great {
+            &>label.active-great {
                 color: #00c853;
+
                 font-weight: bold;
+                transition: color .3s linear;
             }
-            & > label.active-good {
+
+            &>label.active-good {
                 color: #08f;
                 font-weight: bold;
+
+                transition: color .3s linear;
             }
-            & > label.active-soso {
+
+            &>label.active-soso {
                 color: #ffa200;
                 font-weight: bold;
+
+                transition: color .3s linear;
             }
-            & > label.active-sad {
+
+            &>label.active-sad {
                 color: #f00;
                 font-weight: bold;
+
+                transition: color .3s linear;
             }
         }
-    }
 
-    .btn-group label {
-        font-family: sq-icon;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
+        .text-area {
+            position: relative;
+
+
+            label {
+                position: absolute;
+                top: 1px;
+                right: 1px;
+                width: 35px;
+                height: 35px;
+                @include border($emojicolor);
+                border-radius: .25rem;
+                border-top: none;
+                border-right: none;
+                padding: .5rem .55rem;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                background-color: #f9f9f9;
+            }
+
+            textarea {
+                text-indent: 38px;
+                line-height: 2rem;
+                resize: none;
+                padding-top: 0px;
+                background-color: #f9f9f9;
+                margin-bottom: 5rem;
+
+            }
+
+        }
     }
 
     .question-title {
         font-size: 11px;
         font-weight: normal;
         color: $textinputcolor;
+        max-width: 100%;
+        @media screen and (min-width: $break-extrasmall) {
+
+            margin-bottom: 0 !important;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 60% ;
+            max-height: 19px;
+
+        }
 
         @media screen and (min-width: $break-small) {
             font-size: 12px;
@@ -193,16 +247,78 @@
         }
 
         @media screen and (min-width: $break-large) {
+           
             font-size: 13px;
         }
     }
 
     .dot-line {
-        display: flex;
+
+
         @include border(rgba(0, 0, 0, 0.25), 0.5px, dashed);
 
-        @media screen and (min-width: $break-small) {
-            display: flex;
+        @media screen and (min-width: $break-extrasmall) {
+
+            display: -ms-flexbox !important;
+            display: flex !important;
+
+        }
+
+    }
+
+    .question-emoji {
+
+        @media screen and (min-width: $break-extrasmall) {
+
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+
+        }
+    }
+
+    .btn-confirm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+
+        input {
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: #f1592d;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            border: 1px solid transparent;
+            user-select: none;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+
+            &:hover {
+                background-color: #f1592de8;
+            }
+
+            @media screen and (min-width: $break-small) {
+                width: 150px;
+                height: 45px;
+                font-size: 14px;
+            }
+
+            @media screen and (min-width: $break-medium) {
+                width: 200px;
+                height: 45px;
+                font-size: 16px;
+            }
+
+            @media screen and (min-width: $break-large) {
+                width: 250px;
+                height: 50px;
+                font-size: 18px;
+            }
+
         }
     }
 }
@@ -212,8 +328,4 @@ html {
     height: 100%;
     background-color: $backgroundcolor;
     font-family: $iranyekan-light;
-}
-
-.blue::before {
-    color: red;
 }

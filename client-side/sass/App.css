@@ -163,6 +163,263 @@
   color: #00756b;
 }
 
+.checkbox {
+  --background: #fff;
+  --border: #adb5bd;
+  --border-hover: #00756b;
+  --border-active: #00756b;
+  --tick: #fff;
+  --color: #707070;
+  position: relative;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 576px) {
+  .checkbox {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox {
+    font-size: 13px;
+  }
+}
+
+.checkbox span {
+  color: var(--color);
+  position: absolute;
+  right: 25px;
+  white-space: nowrap;
+}
+
+.checkbox span:hover {
+  color: black;
+}
+
+.checkbox input,
+.checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+          box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+
+.checkbox input:hover {
+  --s: 1px;
+  --b: var(--border-hover);
+}
+
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+          transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.checkbox.bounce {
+  --stroke: var(--tick);
+}
+
+.checkbox.bounce input:checked {
+  --s: 11px;
+}
+
+.checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce .2s linear forwards .2s;
+          animation: bounce .2s linear forwards .2s;
+}
+
+.checkbox.bounce svg {
+  --scale: 0;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.checkbox {
+  --background: #fff;
+  --border: #adb5bd;
+  --border-hover: #00756b;
+  --border-active: #00756b;
+  --tick: #fff;
+  --color: #707070;
+  position: relative;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 576px) {
+  .checkbox {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox {
+    font-size: 13px;
+  }
+}
+
+.checkbox span {
+  color: var(--color);
+  position: absolute;
+  right: 25px;
+  white-space: nowrap;
+}
+
+.checkbox span:hover {
+  color: black;
+}
+
+.checkbox input,
+.checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+          box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+
+.checkbox input:hover {
+  --s: 1px;
+  --b: var(--border-hover);
+}
+
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+          transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.checkbox.bounce {
+  --stroke: var(--tick);
+}
+
+.checkbox.bounce input:checked {
+  --s: 11px;
+}
+
+.checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce .2s linear forwards .2s;
+          animation: bounce .2s linear forwards .2s;
+}
+
+.checkbox.bounce svg {
+  --scale: 0;
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .viewpage form {
   direction: rtl;
   border-radius: 15px;
@@ -199,6 +456,8 @@
   background-color: #f3f3f3;
   border-radius: 0.25rem;
   outline: 0;
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
 }
 
 .viewpage .info-section .input-group .font-family {
@@ -252,15 +511,15 @@
   margin-left: 20px;
 }
 
-.viewpage .question-section .padding-40 {
+.viewpage .question-section .padding-question {
   padding-right: 0;
-  padding-left: 10px;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 576px) {
-  .viewpage .question-section .padding-40 {
+  .viewpage .question-section .padding-question {
     padding-right: 15px;
-    padding-left: 25px;
+    padding-left: 15px;
   }
 }
 
@@ -289,7 +548,7 @@
   color: #707070;
 }
 
-.viewpage .question-section .question-emoji > label {
+.viewpage .question-section .emoji-box > label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,19 +559,25 @@
       -ms-flex-align: center;
           align-items: center;
   line-height: 0;
-  padding: 0;
   font-size: 18px;
+  font-weight: 100;
   cursor: pointer;
   color: #bfbfbf;
 }
 
 @media screen and (min-width: 576px) {
-  .viewpage .question-section .question-emoji > label {
+  .viewpage .question-section .emoji-box > label {
     font-size: 21px;
   }
 }
 
-.viewpage .question-section .question-emoji > label input[type="radio"] {
+@media screen and (min-width: 768px) {
+  .viewpage .question-section .emoji-box > label {
+    font-size: 23px;
+  }
+}
+
+.viewpage .question-section .emoji-box > label input[type="radio"] {
   position: absolute;
   cursor: pointer;
   width: 25px;
@@ -320,39 +585,80 @@
   opacity: 0;
 }
 
-.viewpage .question-section .question-emoji > label.active-great {
+.viewpage .question-section .emoji-box > label.active-great {
   color: #00c853;
   font-weight: bold;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
 }
 
-.viewpage .question-section .question-emoji > label.active-good {
+.viewpage .question-section .emoji-box > label.active-good {
   color: #08f;
   font-weight: bold;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
 }
 
-.viewpage .question-section .question-emoji > label.active-soso {
+.viewpage .question-section .emoji-box > label.active-soso {
   color: #ffa200;
   font-weight: bold;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
 }
 
-.viewpage .question-section .question-emoji > label.active-sad {
+.viewpage .question-section .emoji-box > label.active-sad {
   color: #f00;
   font-weight: bold;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
 }
 
-.viewpage .btn-group label {
-  font-family: sq-icon;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+.viewpage .question-section .text-area {
+  position: relative;
+}
+
+.viewpage .question-section .text-area label {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #bfbfbf;
+  border-radius: .25rem;
+  border-top: none;
+  border-right: none;
+  padding: .5rem .55rem;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #f9f9f9;
+}
+
+.viewpage .question-section .text-area textarea {
+  text-indent: 38px;
+  line-height: 2rem;
+  resize: none;
+  padding-top: 0px;
+  background-color: #f9f9f9;
+  margin-bottom: 5rem;
 }
 
 .viewpage .question-title {
   font-size: 11px;
   font-weight: normal;
   color: #707070;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .question-title {
+    margin-bottom: 0 !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: auto;
+    max-width: 60%;
+    max-height: 19px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -374,17 +680,82 @@
 }
 
 .viewpage .dot-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border: 0.5px dashed rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 400px) {
   .viewpage .dot-line {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-flexbox !important;
+    display: -webkit-box !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .question-emoji {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.viewpage .btn-confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.viewpage .btn-confirm input {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f1592d;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.viewpage .btn-confirm input:hover {
+  background-color: #f1592de8;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .btn-confirm input {
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .btn-confirm input {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .viewpage .btn-confirm input {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
   }
 }
 
@@ -393,9 +764,5 @@ html {
   height: 100%;
   background-color: #f3f3f3;
   font-family: "IRANYekan-Light";
-}
-
-.blue::before {
-  color: red;
 }
 /*# sourceMappingURL=App.css.map */
