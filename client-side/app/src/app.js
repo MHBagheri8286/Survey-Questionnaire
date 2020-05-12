@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     // get data from server
     var count = 0;
-    $.get("http://127.0.0.1:8080/mock.json", function (data) {
+    $.get("server-side/mock.json", function (data) {
         var model = JSON.parse(data);
 
         model.Items.forEach((item, index) => {
@@ -57,8 +57,8 @@ $(document).ready(function () {
             `);
         item.Answer.Options.forEach(option => {
             $(`#answer` + Number(index + 1) + ``).append(`
-                        <div class="col-6 col-md-3 custom-control custom-checkbox">
-                            <label class="col-sm-6 col-md-3 checkbox bounce px-0" for="` + option.AnswerItemId + `">
+                        <div class="col-xs-6 col-md-3 custom-control custom-checkbox">
+                            <label class="col-md-3 checkbox bounce px-0" for="` + option.AnswerItemId + `">
                                 <span>` + option.AnswerItemTitle + `</span>
                                 <input type="checkbox" id="` + option.AnswerItemId + `">
                                 <svg viewBox="0 0 21 21">

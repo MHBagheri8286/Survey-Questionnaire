@@ -36,9 +36,6 @@
                 background-color: $backgroundcolor;
                 border-radius: 0.25rem;
                 outline: 0;
-                // @include fadeinInput-backcolor(#fff, $backgroundcolor);
-                // animation: fadeinInput-backcolor .5s linear;
-
                 transition: background-color .3s linear;
             }
         }
@@ -60,6 +57,15 @@
             .rounded-right-0 {
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
+            }
+
+        }
+
+        .col-xs-6 {
+            width: 100%;
+            @media screen and (min-width: $break-extrasmall) {
+                flex: 0 0 50%;
+                max-width: 50%;
             }
         }
     }
@@ -99,10 +105,6 @@
                 padding-left: 15px;
             }
 
-            @media screen and (min-width: $break-medium) {
-                // padding-right: 20px;
-                // padding-left: 20px;
-            }
         }
 
         h1.question-header {
@@ -134,8 +136,6 @@
                 justify-content: center;
                 align-items: center;
                 line-height: 0;
-                //padding: 0;
-                //text-align: center;
                 font-size: 18px;
                 font-weight: 100;
 
@@ -145,6 +145,7 @@
                 @media screen and (min-width: $break-small) {
                     font-size: 21px;
                 }
+
                 @media screen and (min-width: $break-medium) {
                     font-size: 23px;
                 }
@@ -152,11 +153,8 @@
                 input[type="radio"] {
                     position: absolute;
                     cursor: pointer;
-                    // top: -10px;
-                    // right: 8px;
                     width: 25px;
                     height: 25px;
-                    //z-index: -1;
                     opacity: 0;
                 }
             }
@@ -171,28 +169,24 @@
             &>label.active-good {
                 color: #08f;
                 font-weight: bold;
-
                 transition: color .3s linear;
             }
 
             &>label.active-soso {
                 color: #ffa200;
                 font-weight: bold;
-
                 transition: color .3s linear;
             }
 
             &>label.active-sad {
                 color: #f00;
                 font-weight: bold;
-
                 transition: color .3s linear;
             }
         }
 
         .text-area {
             position: relative;
-
 
             label {
                 position: absolute;
@@ -228,14 +222,13 @@
         font-weight: normal;
         color: $textinputcolor;
         max-width: 100%;
-        @media screen and (min-width: $break-extrasmall) {
 
+        @media screen and (min-width: $break-extrasmall) {
             margin-bottom: 0 !important;
             flex: 0 0 auto;
             width: auto;
-            max-width: 60% ;
+            max-width: 60%;
             max-height: 19px;
-
         }
 
         @media screen and (min-width: $break-small) {
@@ -247,7 +240,6 @@
         }
 
         @media screen and (min-width: $break-large) {
-           
             font-size: 13px;
         }
     }
@@ -258,7 +250,6 @@
         @include border(rgba(0, 0, 0, 0.25), 0.5px, dashed);
 
         @media screen and (min-width: $break-extrasmall) {
-
             display: -ms-flexbox !important;
             display: flex !important;
 
@@ -269,7 +260,6 @@
     .question-emoji {
 
         @media screen and (min-width: $break-extrasmall) {
-
             flex: 0 0 33.333333%;
             max-width: 33.333333%;
 
@@ -281,7 +271,6 @@
         justify-content: center;
         align-items: center;
         color: #fff;
-
 
         input {
             width: 120px;

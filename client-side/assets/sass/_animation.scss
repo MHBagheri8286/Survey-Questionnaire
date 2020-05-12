@@ -1,5 +1,19 @@
 @import "variables";
 
+@keyframes bounce {
+    50% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .checkbox {
     --background: #fff;
     --border: #adb5bd;
@@ -28,8 +42,9 @@
         position: absolute;
         right: 25px;
         white-space: nowrap;
-        &:hover{
-            color:black;
+
+        &:hover {
+            color: black;
         }
 
     }
@@ -96,19 +111,5 @@
         svg {
             --scale: 0;
         }
-    }
-}
-
-@keyframes bounce {
-    50% {
-        transform: scale(1.2);
-    }
-
-    75% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
     }
 }

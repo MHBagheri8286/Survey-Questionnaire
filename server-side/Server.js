@@ -4,9 +4,9 @@ const path = require('path');
 
 const server = http.createServer((request, response) => {
 
-  let filePath = '../client-side' + request.url;
-  if (filePath == '../client-side/') {
-    filePath = '../client-side/SurveyQuestionnaire.html';
+  let filePath = '..' + request.url;
+  if (filePath == '../') {
+    filePath = '../SurveyQuestionnaire.html';
   }
   const extname = String(path.extname(filePath)).toLowerCase();
   const mimeTypes = {
