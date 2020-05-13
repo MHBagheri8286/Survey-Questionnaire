@@ -53,11 +53,11 @@ $(document).ready(function () {
         });
 
     });
-    
+
     const appendInfoQuestion = (item, index) => {
 
         $("#infoQuestion").append(`
-            <div class="col-lg-6 mb-2">
+            <div class="col-lg-6">
                 <div class="form-group row mb-2" >
                     <h1 class="col text-dark">`+ item.QuestionTitle + `</h1>
                 </div>
@@ -66,7 +66,7 @@ $(document).ready(function () {
             `);
         item.Answer.Options.forEach(option => {
             $(`#answer` + Number(index + 1) + ``).append(`
-                        <div class="col-xs-6 col-md-3 custom-control custom-checkbox">
+                        <div class="col-xs-6 custom-control mb-1 mb-md-0 custom-checkbox">
                             <label class="checkbox bounce px-0">
                                 <span>` + option.AnswerItemTitle + `</span>
                                 <input type="checkbox" name="` + item.QuestionName + `" value="` + option.AnswerItemName + `">
@@ -157,7 +157,7 @@ $(document).ready(function () {
                     </div>
                     <div class="form-group row">
                         
-                            <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center ">
+                            <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center mb-1 mb-sm-0">
                             
                                 <label class="checkbox bounce px-0">
                                     <span>حتماٌ بله</span>
@@ -168,7 +168,7 @@ $(document).ready(function () {
                                 </label>
                             
                             </div>
-                            <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center">
+                            <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center mb-1 mb-sm-0">
                                 <label class="checkbox bounce px-0">
                                     <span>احتمالاٌ بله</span>
                                     <input type="radio" name="` + option.AnswerItemName + `" value="probablyYes">
@@ -177,7 +177,7 @@ $(document).ready(function () {
                                     </svg>
                                 </label>
                             </div>
-                            <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center ">
+                            <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center mb-1 mb-sm-0">
                                 <label class="checkbox bounce px-0">
                                     <span>حتماٌ خیر</span>
                                     <input type="radio" name="` + option.AnswerItemName + `" value="definitelyNo">

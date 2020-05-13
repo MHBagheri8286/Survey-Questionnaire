@@ -293,7 +293,7 @@
     {
         "GroupId": 3,
         "GroupTitle": "سؤالات نظرخواهی",
-        "QuestionId": 12,
+        "QuestionId": 10,
         "QuestionTitle": "بر اساس تجربه پرواز امروز خود",
         "QuestionName": "flightExperience",
         "Answer": {
