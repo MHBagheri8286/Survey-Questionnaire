@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./client-side/assets/sass/App.css">
     <script src="./client-side/packages/jquery3.4.1/jquery-3.4.1.js"></script>
     <script src="./client-side/packages/bootstrap4/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./client-side/packages/persianCalender/persian-date.js"></script>
     <script type="text/javascript" src="./client-side/packages/persianCalender/persian-datepicker.js"></script>
+    <script type="text/javascript" src="./client-side/packages/persianCalender/persian-date.js"></script>
+    
 
 </head>
 <div class="viewpage container h-100 ">
@@ -65,19 +66,19 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text icon-airplane-takeoff"></span>
                                 </div>
-                                <input type="text" class="form-control" id="inputName" placeholder="مبداء">
+                                <input type="text" class="form-control" id="inputFrom" placeholder="مبداء">
                             </div>
                             <div class="col-md-4 mb-2 mb-md-0 input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text icon-airplane-landing"></span>
                                 </div>
-                                <input type="text" class="form-control " id="inputMembership" placeholder="مقصد">
+                                <input type="text" class="form-control " id="inputTo" placeholder="مقصد">
                             </div>
                             <div class="col-md-4 mb-2 mb-md-0 input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text icon-calendar"></span>
                                 </div>
-                                <input type="text" class="form-control text-left " id="datepicker"
+                                <input type="text" class="form-control text-left " id="inputDate"
                                     placeholder="تاریخ پرواز" />
                             </div>
                         </div>
@@ -90,7 +91,7 @@
                                 </div>
                                 <input type="text"
                                     class="inputfocus-left pl-0 text-left form-control border-left-0 rounded-0 text-wrap"
-                                    id="inputPhone" placeholder="شماره پرواز">
+                                    id="inputFlightNumber" placeholder="شماره پرواز">
                                 <div class="input-group-prepend">
                                     <span
                                         class="input-group-text font-family text-center bg-white  border border-right-0  rounded-left rounded-right-0">
@@ -102,24 +103,26 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text icon-seat-passenger"></span>
                                 </div>
-                                <input type="text" class="form-control " id="inputEmail" placeholder="شماره صندلی">
+                                <input type="text" class="form-control " id="inputSeatNumber" placeholder="شماره صندلی">
                             </div>
 
                         </div>
                     </div>
-
                 </div>
-                <div class="form-group row mb-0" id="infoQuestion">
-                </div>
+                <div class="form-group row mb-0" id="infoQuestion"></div>
             </div>
+
             <div class="question-section">
                 <div class="form-group row mb-3">
                     <h1 class="col-auto">سؤالات نظرخواهی</h1>
                     <div class="col line"></div>
                 </div>
-                <div class="form-group row padding-question mb-0 align-items-start" id="stateQuestion">
 
+                <div class="form-group row padding-question mb-0 align-items-start" id="stateQuestion">
+                    <div class="col-lg-6 mb-2" id="questionColumn1"></div>
+                    <div class="col-lg-6 mb-2" id="questionColumn2"></div>
                 </div>
+
                 <div class="form-group row padding-question mb-0">
                     <div class="col-12">
                         <div class="form-group mb-0 text-area">
@@ -133,11 +136,13 @@
             <div class="form-group row mb-3 btn-confirm">
                 <input type="submit" value="تأیید">
             </div>
+            
+        
         </form>
     </div>
 
     <script type="text/javascript" src="./client-side/app/src/app.js"></script>
-    
+
 
 
 </html>

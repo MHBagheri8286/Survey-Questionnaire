@@ -19,6 +19,7 @@
             line-height: 1.75;
             letter-spacing: normal;
             text-align: right;
+            user-select: none;
             color: $headercolor;
 
             @media screen and (min-width: $break-small) {
@@ -36,7 +37,7 @@
                 background-color: $backgroundcolor;
                 border-radius: 0.25rem;
                 outline: 0;
-                transition: background-color .3s linear;
+                transition: background-color .2s linear;
             }
         }
 
@@ -63,6 +64,8 @@
 
         .col-xs-6 {
             width: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
             @media screen and (min-width: $break-extrasmall) {
                 flex: 0 0 50%;
                 max-width: 50%;
@@ -78,6 +81,7 @@
             font-stretch: normal;
             font-style: normal;
             line-height: 1.75;
+            user-select: none;
             letter-spacing: normal;
             text-align: right;
             color: $darkgreen;
@@ -163,25 +167,25 @@
                 color: #00c853;
 
                 font-weight: bold;
-                transition: color .3s linear;
+                transition: color .2s linear;
             }
 
             &>label.active-good {
                 color: #08f;
                 font-weight: bold;
-                transition: color .3s linear;
+                transition: color .2s linear;
             }
 
             &>label.active-soso {
                 color: #ffa200;
                 font-weight: bold;
-                transition: color .3s linear;
+                transition: color .2s linear;
             }
 
             &>label.active-sad {
                 color: #f00;
                 font-weight: bold;
-                transition: color .3s linear;
+                transition: color .2s linear;
             }
         }
 
@@ -215,6 +219,25 @@
             }
 
         }
+
+        .col-xs-4 {
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
+            @media screen and (min-width: $break-extrasmall) {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+        }
+        .checkbox {
+            width: 65px;
+        }
+        .d-xs-flex{
+
+            @media screen and (min-width: $break-extrasmall) {
+                display: flex !important;
+            }
+        }
     }
 
     .question-title {
@@ -222,13 +245,15 @@
         font-weight: normal;
         color: $textinputcolor;
         max-width: 100%;
+        user-select: none;
 
         @media screen and (min-width: $break-extrasmall) {
             margin-bottom: 0 !important;
             flex: 0 0 auto;
             width: auto;
             max-width: 60%;
-            max-height: 19px;
+            // max-height: 19px;
+            height: 20px;
         }
 
         @media screen and (min-width: $break-small) {
@@ -237,10 +262,12 @@
 
         @media screen and (min-width: $break-medium) {
             font-size: 14px;
+
         }
 
         @media screen and (min-width: $break-large) {
             font-size: 13px;
+            height: 25px;
         }
     }
 

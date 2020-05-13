@@ -5,23 +5,28 @@
         "GroupTitle": "آشنایی با مسافر",
         "QuestionId": 1,
         "QuestionTitle": "هدف از سفر",
+        "QuestionName": "target",
         "Answer": {
             "MultiSelect": true,
             "Options": [{
                     "AnswerItemId": 10,
-                    "AnswerItemTitle": "تفریح"
+                    "AnswerItemTitle": "تفریح",
+                    "AnswerItemName": "leisure"
                 },
                 {
                     "AnswerItemId": 11,
-                    "AnswerItemTitle": "کار"
+                    "AnswerItemTitle": "کار",
+                    "AnswerItemName": "business"
                 },
                 {
                     "AnswerItemId": 12,
-                    "AnswerItemTitle": "تحصیل"
+                    "AnswerItemTitle": "تحصیل",
+                    "AnswerItemName": "education"
                 },
                 {
                     "AnswerItemId": 13,
-                    "AnswerItemTitle": "غیره"
+                    "AnswerItemTitle": "غیره",
+                    "AnswerItemName": "other"
                 }
             ]
 
@@ -32,23 +37,28 @@
         "GroupTitle": "آشنایی با مسافر",
         "QuestionId": 2,
         "QuestionTitle": "دلیل انتخاب ماهان",
+        "QuestionName": "reason",
         "Answer": {
             "MultiSelect": true,
             "Options": [{
                     "AnswerItemId": 14,
-                    "AnswerItemTitle": "پرواز مستقیم"
+                    "AnswerItemTitle": "پرواز مستقیم",
+                    "AnswerItemName": "directFlight"
                 },
                 {
                     "AnswerItemId": 15,
-                    "AnswerItemTitle": "سرویس مناسب"
+                    "AnswerItemTitle": "سرویس مناسب",
+                    "AnswerItemName": "service"
                 },
                 {
                     "AnswerItemId": 16,
-                    "AnswerItemTitle": "قیمت مناسب"
+                    "AnswerItemTitle": "قیمت مناسب",
+                    "AnswerItemName": "price"
                 },
                 {
                     "AnswerItemId": 17,
-                    "AnswerItemTitle": "برنامه پروازی"
+                    "AnswerItemTitle": "برنامه پروازی",
+                    "AnswerItemName": "schedule"
                 }
             ]
 
@@ -58,23 +68,28 @@
         "GroupTitle": "آشنایی با مسافر",
         "QuestionId": 3,
         "QuestionTitle": "تعداد سفر با ماهان در سال گذشته",
+        "QuestionName": "times",
         "Answer": {
             "MultiSelect": true,
             "Options": [{
                     "AnswerItemId": 18,
-                    "AnswerItemTitle": "نداشته ام"
+                    "AnswerItemTitle": "نداشته ام",
+                    "AnswerItemName": "none"
                 },
                 {
                     "AnswerItemId": 19,
-                    "AnswerItemTitle": "یک بار"
+                    "AnswerItemTitle": "یک بار",
+                    "AnswerItemName": "once"
                 },
                 {
                     "AnswerItemId": 20,
-                    "AnswerItemTitle": "دو بار"
+                    "AnswerItemTitle": "دو بار",
+                    "AnswerItemName": "twice"
                 },
                 {
                     "AnswerItemId": 21,
-                    "AnswerItemTitle": "دفعات بیشتر"
+                    "AnswerItemTitle": "دفعات بیشتر",
+                    "AnswerItemName": "more"
                 }
             ]
 
@@ -85,23 +100,28 @@
         "GroupTitle": "آشنایی با مسافر",
         "QuestionId": 4,
         "QuestionTitle": "نحوه خرید بلیط",
+        "QuestionName": "makeReservation",
         "Answer": {
             "MultiSelect": true,
             "Options": [{
                     "AnswerItemId": 22,
-                    "AnswerItemTitle": "دفاتر فروش"
+                    "AnswerItemTitle": "دفاتر فروش",
+                    "AnswerItemName": "saleOffice"
                 },
                 {
                     "AnswerItemId": 23,
-                    "AnswerItemTitle": "آژانس ها"
+                    "AnswerItemTitle": "آژانس ها",
+                    "AnswerItemName": "travelAgent"
                 },
                 {
                     "AnswerItemId": 24,
-                    "AnswerItemTitle": "لیست انتظار"
+                    "AnswerItemTitle": "لیست انتظار",
+                    "AnswerItemName": "waitingList"
                 },
                 {
                     "AnswerItemId": 25,
-                    "AnswerItemTitle": "سایت ماهان"
+                    "AnswerItemTitle": "سایت ماهان",
+                    "AnswerItemName": "webSite"
                 }
             ]
 
@@ -112,19 +132,23 @@
         "GroupTitle": "سؤالات نظرخواهی",
         "QuestionId": 5,
         "QuestionTitle": "فروش و رزرواسیون",
+        "QuestionName": "Sales",
         "Answer": {
             "MultiSelect": false,
             "Options": [{
                     "AnswerItemId": 26,
-                    "AnswerItemTitle": "رفتار و کارآمدی کارکنان"
+                    "AnswerItemTitle": "رفتار و کارآمدی کارکنان",
+                    "AnswerItemName": "efficiency"
                 },
                 {
                     "AnswerItemId": 27,
-                    "AnswerItemTitle": "سهولت در خرید اینترنتی"
+                    "AnswerItemTitle": "سهولت در خرید اینترنتی",
+                    "AnswerItemName": "easeOfUse"
                 },
                 {
                     "AnswerItemId": 28,
-                    "AnswerItemTitle": "مدت انتظار و پاسخگویی تلفنی جهت رزرو بلیت"
+                    "AnswerItemTitle": "مدت انتظار و پاسخگویی تلفنی جهت رزرو بلیت",
+                    "AnswerItemName": "swiftResponse"
                 }
             ]
 
@@ -134,54 +158,66 @@
         "GroupId": 2,
         "GroupTitle": "سؤالات نظرخواهی",
         "QuestionId": 6,
-        "QuestionTitle": "خدمات فرودگاهی",
+        "QuestionTitle": "خدمات پرواز",
+        "QuestionName": "services",
         "Answer": {
             "MultiSelect": false,
             "Options": [{
-                "AnswerItemId": 29,
-                "AnswerItemTitle": "رفتار و دقت کارکنان"
+                "AnswerItemId": 36,
+                "AnswerItemTitle": "رفتار محترمانه و دوستانه کادر پرواز",
+                "AnswerItemName": "friendly"
             },
             {
-                "AnswerItemId": 30,
-                "AnswerItemTitle": "مراحل پذیرش مسافر"
+                "AnswerItemId": 37,
+                "AnswerItemTitle": "میزان اطلاعات و رفتار حرفه ای در رابطه با پرواز",
+                "AnswerItemName": "knowledge"
             },
             {
-                "AnswerItemId": 31,
-                "AnswerItemTitle": "نحوه انتقال از سالن ترانزیت به هواپیما"
+                "AnswerItemId": 38,
+                "AnswerItemTitle": "سرعت پاسخگویی به درخواست شما",
+                "AnswerItemName": "responsive"
+            },
+            {
+                "AnswerItemId": 39,
+                "AnswerItemTitle": "آراستگی وضعیت ظاهری",
+                "AnswerItemName": "wellGroomed"
+            },
+            {
+                "AnswerItemId": 40,
+                "AnswerItemTitle": "ارایه سرویس به موقع",
+                "AnswerItemName": "efficeintService"
+            },
+            {
+                "AnswerItemId": 41,
+                "AnswerItemTitle": "کیفیت و تنوع غذا و نوشیدنی",
+                "AnswerItemName": "quality"
             }
         ]
         }
     },
+    
     {
         "GroupId": 2,
         "GroupTitle": "سؤالات نظرخواهی",
         "QuestionId": 7,
-        "QuestionTitle": "سرگرمی",
+        "QuestionTitle": "خدمات فرودگاهی",
+        "QuestionName": "airportServices",
         "Answer": {
             "MultiSelect": false,
             "Options": [{
-                "AnswerItemId": 32,
-                "AnswerItemTitle": "رضایت از نشریات"
+                "AnswerItemId": 29,
+                "AnswerItemTitle": "رفتار و دقت کارکنان",
+                "AnswerItemName": "staff"
             },
             {
-                "AnswerItemId": 33,
-                "AnswerItemTitle": "محتوای مجله پرواز ماهان"
+                "AnswerItemId": 30,
+                "AnswerItemTitle": "مراحل پذیرش مسافر",
+                "AnswerItemName": "checkin"
             },
             {
-                "AnswerItemId": 34,
-                "AnswerItemTitle": "رضایت شما از فیلم، کلیپ و تصاویر پخش شده"
-            },
-            {
-                "AnswerItemId": 35,
-                "AnswerItemTitle": "نحوه انتقال از سالن ترانزیت به هواپیما"
-            },
-            {
-                "AnswerItemId": 36,
-                "AnswerItemTitle": "سرگرمی کودکان"
-            },
-            {
-                "AnswerItemId": 37,
-                "AnswerItemTitle": "کیفیت صدا و تصویر"
+                "AnswerItemId": 31,
+                "AnswerItemTitle": "نحوه انتقال از سالن ترانزیت به هواپیما",
+                "AnswerItemName": "transit"
             }
         ]
         }
@@ -190,20 +226,87 @@
         "GroupId": 2,
         "GroupTitle": "سؤالات نظرخواهی",
         "QuestionId": 8,
-        "QuestionTitle": "اعلانات",
+        "QuestionTitle": "کابین هواپیما",
+        "QuestionName": "comfort",
         "Answer": {
             "MultiSelect": false,
             "Options": [{
-                "AnswerItemId": 38,
-                "AnswerItemTitle": "کیفیت صدا و ارائه اطلاعات ( خلبان)"
+                "AnswerItemId": 32,
+                "AnswerItemTitle": "آراستگی و تمیزی داخل هواپیما",
+                "AnswerItemName": "cleanliness"
             },
             {
-                "AnswerItemId": 39,
-                "AnswerItemTitle": "کیفیت صدا و ارائه اطلاعات ( مهماندار )"
+                "AnswerItemId": 33,
+                "AnswerItemTitle": "راحتی صندلی ها",
+                "AnswerItemName": "seat"
+            },
+            {
+                "AnswerItemId": 34,
+                "AnswerItemTitle": "دمای داخل کابین هواپیما",
+                "AnswerItemName": "temperature"
+            },
+            {
+                "AnswerItemId": 35,
+                "AnswerItemTitle": "نظافت سرویس های بهداشتی",
+                "AnswerItemName": "washroom"
+            }
+        ]
+        }
+    },
+    
+    {
+        "GroupId": 2,
+        "GroupTitle": "سؤالات نظرخواهی",
+        "QuestionId": 9,
+        "QuestionTitle": "سرگرمی",
+        "QuestionName": "entertainment",
+        "Answer": {
+            "MultiSelect": false,
+            "Options": [{
+                "AnswerItemId": 32,
+                "AnswerItemTitle": "رضایت از نشریات",
+                "AnswerItemName": "readingMaterial"
+            },
+            {
+                "AnswerItemId": 33,
+                "AnswerItemTitle": "محتوای مجله پرواز ماهان",
+                "AnswerItemName": "magazine"
+            },
+            {
+                "AnswerItemId": 34,
+                "AnswerItemTitle": "رضایت شما از فیلم، کلیپ و تصاویر پخش شده",
+                "AnswerItemName": "movies"
+            },
+            {
+                "AnswerItemId": 36,
+                "AnswerItemTitle": "سرگرمی کودکان",
+                "AnswerItemName": "kids"
+            },
+            {
+                "AnswerItemId": 37,
+                "AnswerItemTitle": "کیفیت صدا و تصویر",
+                "AnswerItemName": "equipment"
+            }
+        ]
+        }
+    },
+    {
+        "GroupId": 3,
+        "GroupTitle": "سؤالات نظرخواهی",
+        "QuestionId": 12,
+        "QuestionTitle": "بر اساس تجربه پرواز امروز خود",
+        "QuestionName": "flightExperience",
+        "Answer": {
+            "MultiSelect": false,
+            "Options": [{
+                "AnswerItemId": 44,
+                "AnswerItemTitle": "آیا دوباره با ما سفر می کنید یا به دیگران توصیه می کنید؟",
+                "AnswerItemName": "travelAgain"
             }
         ]
         }
     }
+    
      
 ]
 
