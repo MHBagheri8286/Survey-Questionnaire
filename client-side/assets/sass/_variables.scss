@@ -1,0 +1,46 @@
+//border
+@mixin border($color: black, $width: 1px, $style: solid) {
+    border: $width $style $color;
+  }
+@mixin boxshadow($horizontal, $vertical, $blur, $spread, $color) {
+    box-shadow: $horizontal $vertical $blur $spread $color;
+}
+
+//breakpoints
+$break-extrasmall: 400px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-extralarge: 1200px;
+
+
+// colors
+$backgroundcolor: #f3f3f3 ;
+$headercolor: #ffa200;
+$textinputcolor: #707070;
+$darkgreen: #014d46;
+$emojicolor:#bfbfbf;
+$green: #00756b;
+
+//fonts
+$iransans-bold-web-font: 'IRANSans-Bold-web';
+$iransans-light-web-font: 'IRANSans-Light-web';
+$iransans-ultralight-web-font: 'IRANSans-UltraLight-web';
+$iransans-web-font: 'IRANSans-web';
+$Roboto-Bold-font: 'roboto-bold',sans-serif;
+$Roboto-Regular-font: 'roboto-regular',sans-serif;
+$iranyekan-light: 'IRANYekan-Light';
+$iranyekan-bold: 'IRANYekan-Bold';
+$iranyekan-regular: 'IRANYekan-Regular';
+
+
+//spaces
+$spacer: 10px;
+
+$space-0: 0;
+$space-1: ($spacer * .25);
+$space-2: ($spacer * .5);
+$space-3: ($spacer * 1.5);
+$space-4: ($spacer * 2);
+
+

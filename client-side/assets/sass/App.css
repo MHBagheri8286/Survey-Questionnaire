@@ -1,0 +1,840 @@
+@font-face {
+  font-family: 'sq-icon';
+  src: url("../fonts/icons/sq-icon.eot");
+  src: url("../fonts/icons/sq-icon.eot") format("embedded-opentype"), url("../fonts/icons/sq-icon.ttf") format("truetype"), url("../fonts/icons/sq-icon.woff") format("woff"), url("../fonts/icons/sq-icon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-web";
+  src: url("../fonts/iransanc/IRANSans-web.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-Bold-web";
+  src: url("../fonts/iransanc/IRANSans-Bold-web.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-Light-web";
+  src: url("../fonts/iransanc/IRANSans-Light-web.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANSans-UltraLight-web";
+  src: url("../fonts/iransanc/IRANSans-UltraLight-web.ttf");
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANYekan-Light";
+  src: url("../fonts/iranyekan/IRANYekanLight.ttf");
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANYekan-Bold";
+  src: url("../fonts/iranyekan/IRANYekanBold.ttf");
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "IRANYekan-Regular";
+  src: url("../fonts/iranyekan/IRANYekanRegular.ttf");
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "roboto-bold", sans-serif;
+  src: url("../fonts/roboto/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "roboto-regular", sans-serif;
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sq-icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-file-document-edit-outline:before {
+  content: "\e902";
+  color: #00756b;
+}
+
+.icon-account:before {
+  content: "\e903";
+  color: #00756b;
+}
+
+.icon-airplane:before {
+  content: "\e900";
+  color: #00756b;
+}
+
+.icon-account-check:before {
+  content: "\e904";
+  color: #00756b;
+}
+
+.icon-airplane-landing:before {
+  content: "\e901";
+  color: #00756b;
+}
+
+.icon-airplane-takeoff:before {
+  content: "\e905";
+  color: #00756b;
+}
+
+.icon-email-outline:before {
+  content: "\e906";
+  color: #00756b;
+}
+
+.icon-great:before {
+  content: "\e908";
+}
+
+.icon-good:before {
+  content: "\e90a";
+}
+
+.icon-phone:before {
+  content: "\e90b";
+  color: #00756b;
+}
+
+.icon-soso:before {
+  content: "\e90f";
+}
+
+.icon-sad:before {
+  content: "\e90c";
+}
+
+.icon-seat-passenger:before {
+  content: "\e910";
+  color: #00756b;
+}
+
+.icon-calendar:before {
+  content: "\e911";
+  color: #00756b;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.checkbox {
+  --background: #fff;
+  --border: #adb5bd;
+  --border-hover: #00756b;
+  --border-active: #00756b;
+  --tick: #fff;
+  --color: #707070;
+  position: relative;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 576px) {
+  .checkbox {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox {
+    font-size: 13px;
+  }
+}
+
+.checkbox span {
+  color: var(--color);
+  position: absolute;
+  right: 25px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox span:hover {
+  color: black;
+}
+
+.checkbox input,
+.checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+          box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+
+.checkbox input:hover {
+  --s: 1px;
+  --b: var(--border-hover);
+}
+
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+          transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.checkbox.bounce {
+  --stroke: var(--tick);
+}
+
+.checkbox.bounce input:checked {
+  --s: 11px;
+}
+
+.checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce .2s linear forwards .2s;
+          animation: bounce .2s linear forwards .2s;
+}
+
+.checkbox.bounce svg {
+  --scale: 0;
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.checkbox {
+  --background: #fff;
+  --border: #adb5bd;
+  --border-hover: #00756b;
+  --border-active: #00756b;
+  --tick: #fff;
+  --color: #707070;
+  position: relative;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 576px) {
+  .checkbox {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox {
+    font-size: 13px;
+  }
+}
+
+.checkbox span {
+  color: var(--color);
+  position: absolute;
+  right: 25px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox span:hover {
+  color: black;
+}
+
+.checkbox input,
+.checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+          box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+
+.checkbox input:hover {
+  --s: 1px;
+  --b: var(--border-hover);
+}
+
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+          transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.checkbox.bounce {
+  --stroke: var(--tick);
+}
+
+.checkbox.bounce input:checked {
+  --s: 11px;
+}
+
+.checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce .2s linear forwards .2s;
+          animation: bounce .2s linear forwards .2s;
+}
+
+.checkbox.bounce svg {
+  --scale: 0;
+}
+
+.viewpage form {
+  direction: rtl;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.viewpage .info-section h1 {
+  margin-bottom: 0;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: right;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #ffa200;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .info-section h1 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .info-section h1 {
+    font-size: 14px;
+  }
+}
+
+.viewpage .info-section .input-group:focus-within .input-group-prepend {
+  background-color: #f3f3f3;
+  border-radius: 0.25rem;
+  outline: 0;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.viewpage .info-section .input-group .font-family {
+  font-family: "roboto-bold", sans-serif;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .info-section .input-group .font-family {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .info-section .input-group .font-family {
+    font-size: 14px;
+  }
+}
+
+.viewpage .info-section .input-group .rounded-right-0 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.viewpage .info-section .col-xs-6 {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .info-section .col-xs-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .info-section .col-xs-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.viewpage .question-section h1 {
+  margin-bottom: 0 !important;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: normal;
+  text-align: right;
+  color: #014d46;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section h1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .question-section h1 {
+    font-size: 15px;
+  }
+}
+
+.viewpage .question-section .line {
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  margin-left: 10px;
+}
+
+.viewpage .question-section .padding-question {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section .padding-question {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.viewpage .question-section h1.question-header {
+  font-size: 13px;
+  font-weight: bold;
+  color: #00756b;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section h1.question-header {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .question-section h1.question-header {
+    font-size: 15px;
+  }
+}
+
+.viewpage .question-section .question-state > div {
+  font-size: 10px;
+  padding: 0;
+  text-align: center;
+  color: #707070;
+}
+
+.viewpage .question-section .emoji-box > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  font-size: 18px;
+  font-weight: 100;
+  cursor: pointer;
+  color: #bfbfbf;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-section .emoji-box > label {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .question-section .emoji-box > label {
+    font-size: 23px;
+  }
+}
+
+.viewpage .question-section .emoji-box > label input[type="radio"] {
+  position: absolute;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+}
+
+.viewpage .question-section .emoji-box > label.active-great {
+  color: #00c853;
+  font-weight: bold;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.viewpage .question-section .emoji-box > label.active-good {
+  color: #08f;
+  font-weight: bold;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.viewpage .question-section .emoji-box > label.active-soso {
+  color: #ffa200;
+  font-weight: bold;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.viewpage .question-section .emoji-box > label.active-sad {
+  color: #f00;
+  font-weight: bold;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.viewpage .question-section .text-area {
+  position: relative;
+}
+
+.viewpage .question-section .text-area label {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #bfbfbf;
+  border-radius: .25rem;
+  border-top: none;
+  border-right: none;
+  padding: .5rem .55rem;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #f9f9f9;
+}
+
+.viewpage .question-section .text-area textarea {
+  text-indent: 38px;
+  line-height: 2rem;
+  resize: none;
+  padding-top: 0px;
+  background-color: #f9f9f9;
+  margin-bottom: 5rem;
+}
+
+.viewpage .question-section .col-xs-4 {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .question-section .col-xs-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+.viewpage .question-section .checkbox {
+  width: 65px;
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .question-section .d-xs-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.viewpage .question-title {
+  font-size: 11px;
+  font-weight: normal;
+  color: #707070;
+  max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .question-title {
+    margin-bottom: 0 !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: auto;
+    max-width: 60%;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .question-title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .question-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .viewpage .question-title {
+    font-size: 13px;
+    height: 25px;
+  }
+}
+
+.viewpage .dot-line {
+  border: 0.5px dashed rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .dot-line {
+    display: -ms-flexbox !important;
+    display: -webkit-box !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .viewpage .question-emoji {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.viewpage .btn-confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.viewpage .btn-confirm input {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f1592d;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.viewpage .btn-confirm input:hover {
+  background-color: #f1592de8;
+}
+
+@media screen and (min-width: 576px) {
+  .viewpage .btn-confirm input {
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .viewpage .btn-confirm input {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .viewpage .btn-confirm input {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #f3f3f3;
+  font-family: "IRANYekan-Light";
+}
+/*# sourceMappingURL=App.css.map */

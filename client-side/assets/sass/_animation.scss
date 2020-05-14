@@ -1,0 +1,116 @@
+@import "variables";
+
+@keyframes bounce {
+    50% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.checkbox {
+    --background: #fff;
+    --border: #adb5bd;
+    --border-hover: #00756b;
+    --border-active: #00756b;
+    --tick: #fff;
+    --color: #707070;
+    position: relative;
+    line-height: 20px;
+    cursor: pointer;
+    margin-bottom: 0;
+    vertical-align: top;
+
+    font-size: 11px;
+
+    @media screen and (min-width: $break-small) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: $break-medium) {
+        font-size: 13px;
+    }
+
+    span {
+        color: var(--color);
+        position: absolute;
+        right: 25px;
+        white-space: nowrap;
+        user-select: none;
+
+        &:hover {
+            color: black;
+        }
+
+    }
+
+    input,
+    svg {
+        width: 21px;
+        height: 21px;
+        display: block;
+    }
+
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        outline: none;
+        background: var(--background);
+        border: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: box-shadow .3s;
+        box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+
+        &:hover {
+            --s: 1px;
+            --b: var(--border-hover);
+        }
+
+        &:checked {
+            --b: var(--border-active);
+        }
+    }
+
+    svg {
+        pointer-events: none;
+        fill: none;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: var(--stroke, var(--border-active));
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 21px;
+        height: 21px;
+        transform: scale(var(--scale, 1)) translateZ(0);
+    }
+
+    &.bounce {
+        --stroke: var(--tick);
+
+        input {
+            &:checked {
+                --s: 11px;
+
+                &+svg {
+                    animation: bounce .2s linear forwards .2s;
+                }
+            }
+        }
+
+        svg {
+            --scale: 0;
+        }
+    }
+}
