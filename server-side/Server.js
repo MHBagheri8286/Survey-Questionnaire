@@ -1,8 +1,31 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+var qs = require('querystring');
+
 
 const server = http.createServer((request, response) => {
+
+  const { url } = request;
+
+
+  if (url === '/surveyQuestionnaire') {
+    let formData = '';
+    request.on('data', (data) => {
+      formData += data;
+    }).on('end', () => {
+      response.on('error', (err) => {
+        console.error(err);
+      });
+      response.writeHead(200, { 'Content-Type': 'text/html' });
+      var post = qs.parse(formData);
+      console.log(post);
+      
+      response.write("<h3>Data sent successfully!</h3>");
+      response.end();
+    });
+  }
+
 
   let filePath = '..' + request.url;
   if (filePath == '../') {
