@@ -160,7 +160,7 @@ $(document).ready(function () {
                             <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center mb-1 mb-sm-0">
                             
                                 <label class="checkbox bounce px-0">
-                                    <span>حتماٌ بله</span>
+                                    <span>حتماً بله</span>
                                     <input type="radio" name="` + option.AnswerItemName + `" value="definitelyYes">
                                     <svg viewBox="0 0 21 21">
                                         <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
@@ -170,7 +170,7 @@ $(document).ready(function () {
                             </div>
                             <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center mb-1 mb-sm-0">
                                 <label class="checkbox bounce px-0">
-                                    <span>احتمالاٌ بله</span>
+                                    <span>احتمالاً بله</span>
                                     <input type="radio" name="` + option.AnswerItemName + `" value="probablyYes">
                                     <svg viewBox="0 0 21 21">
                                         <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
@@ -179,7 +179,7 @@ $(document).ready(function () {
                             </div>
                             <div class="col-xs-4 custom-control custom-checkbox d-block d-xs-flex justify-content-center align-items-center mb-1 mb-sm-0">
                                 <label class="checkbox bounce px-0">
-                                    <span>حتماٌ خیر</span>
+                                    <span>حتماً خیر</span>
                                     <input type="radio" name="` + option.AnswerItemName + `" value="definitelyNo">
                                     <svg viewBox="0 0 21 21">
                                         <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
@@ -192,6 +192,7 @@ $(document).ready(function () {
 
         });
     }
+<<<<<<< HEAD
 
     //submit data
     $('input#submitButton').click(function () {
@@ -205,4 +206,6 @@ $(document).ready(function () {
         });
     });
 
+=======
+>>>>>>> cbe14328897d664b3344c403ab413fda9a2444a2
 })
