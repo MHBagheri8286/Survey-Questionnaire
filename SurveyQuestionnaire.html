@@ -17,11 +17,8 @@
 </head>
 <div class="viewpage container h-100 ">
     <div class="d-flex flex-wrap h-100 justify-content-center align-items-center">
-<<<<<<< HEAD
-        <form id="surveyForm" class=" p-3 bg-white text-dark view-form" action="#">
-=======
-        <form class=" p-3 bg-white text-dark view-form" id="surveyForm" action="/surveyQuestionnaire" method="POST">
->>>>>>> cbe14328897d664b3344c403ab413fda9a2444a2
+
+        <form class=" p-3 bg-white text-dark view-form" id="surveyForm" action="/result" method="POST">
             <div class="info-section">
                 <div class="form-group row mb-2">
                     <h1 class="col">در صورت تمایل مشخصات فردی خود را وارد نمایید</h1>
@@ -82,8 +79,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text icon-calendar"></span>
                                 </div>
-                                <input type="text" class="form-control text-left " name="inputDate"
-                                    placeholder="تاریخ پرواز"/>
+                                <input type="text" class="form-control text-left " id="inputDate" name="inputDate" autocomplete="off" placeholder="تاریخ پرواز"/>
                             </div>
                         </div>
                     </div>
@@ -131,26 +127,16 @@
                     <div class="col-12">
                         <div class="form-group mb-0 text-area">
                             <label for="textArea" class="col-auto icon-file-document-edit-outline"></label>
-<<<<<<< HEAD
-                            <textarea class="form-control" id="textArea" rows="4" name="suggestion" placeholder="توضیحات و پیشنهادات"></textarea>
-=======
                             <textarea class="form-control" id="textArea" rows="4" name="suggestion"
                                 placeholder="توضیحات و پیشنهادات"></textarea>
->>>>>>> cbe14328897d664b3344c403ab413fda9a2444a2
                         </div>
                     </div>
                 </div>
             </div>
             <div class="form-group row mb-3 btn-confirm">
                 <input type="submit" id="submitButton" value="تأیید">
-            </div>
-            
-        
+            </div>      
         </form>
     </div>
-
     <script type="text/javascript" src="./client-side/app/src/app.js"></script>
-
-
-
 </html>

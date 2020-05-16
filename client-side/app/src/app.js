@@ -35,7 +35,7 @@ $(document).ready(function () {
             $(this).parent().addClass('active-sad');
         }
     });
-    //get data from server
+
     $.get("server-side/mock.json", function (data) {
         let model = JSON.parse(data);
         length = model.Items.length;
@@ -112,7 +112,7 @@ $(document).ready(function () {
                     <div class="col-12 mb-3 mb-sm-0 col-sm-auto pl-2 question-title" id="AnswerTitle` + option.AnswerItemId + `">` + (++count) + `. ` + option.AnswerItemTitle + `</div>
                     <div class="d-none d-sm-flex col dot-line"></div>
                     <div class="d-flex justify-content-start align-items-center d-sm-block col-12 col-sm-4 question-emoji">
-                        <div class="mb-sm-0 row emoji-box" data-toggle="buttons">
+                        <div class="mb-sm-0 row emoji-box" >
                             <label class="btn col-3 icon-great">
                                 <input type="radio" name="` + option.AnswerItemName + `" value="great">
                             </label>
@@ -192,20 +192,4 @@ $(document).ready(function () {
 
         });
     }
-<<<<<<< HEAD
-
-    //submit data
-    $('input#submitButton').click(function () {
-        event.preventDefault();
-        console.log($('form#surveyForm').serialize());
-        $.ajax({
-            url: '/upload',
-            type: 'post',
-            dataType: 'json',
-            data: $('form#surveyForm').serialize()
-        });
-    });
-
-=======
->>>>>>> cbe14328897d664b3344c403ab413fda9a2444a2
 })
