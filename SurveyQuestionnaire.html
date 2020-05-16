@@ -17,7 +17,7 @@
 </head>
 <div class="viewpage container h-100 ">
     <div class="d-flex flex-wrap h-100 justify-content-center align-items-center">
-        <form class=" p-3 bg-white text-dark view-form">
+        <form id="surveyForm" class=" p-3 bg-white text-dark view-form" action="#">
             <div class="info-section">
                 <div class="form-group row mb-2">
                     <h1 class="col">در صورت تمایل مشخصات فردی خود را وارد نمایید</h1>
@@ -127,14 +127,13 @@
                     <div class="col-12">
                         <div class="form-group mb-0 text-area">
                             <label for="textArea" class="col-auto icon-file-document-edit-outline"></label>
-                            <textarea class="form-control" id="textArea" rows="4"
-                                placeholder="توضیحات و پیشنهادات"></textarea>
+                            <textarea class="form-control" id="textArea" rows="4" name="suggestion" placeholder="توضیحات و پیشنهادات"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="form-group row mb-3 btn-confirm">
-                <input type="submit" value="تأیید">
+                <input type="submit" id="submitButton" value="تأیید">
             </div>
             
         

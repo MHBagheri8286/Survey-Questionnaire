@@ -788,6 +788,7 @@
 .viewpage .btn-confirm input {
   width: 120px;
   height: 40px;
+  outline: none;
   border-radius: 10px;
   background-color: #f1592d;
   color: #fff;

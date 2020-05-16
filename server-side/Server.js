@@ -1,8 +1,25 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+let formData = '';
 
 const server = http.createServer((request, response) => {
+
+  const { url } = request;
+  
+  if (url === '/upload') {
+    request.on('data', (chunk) => {
+      formData = chunk.toString();
+    }).on('end', () => {
+      response.on('error', (err) => {
+        console.error(err);
+      });
+      response.writeHead(200, { 'Content-Type': 'text/html' });
+      response.write(formData);
+      response.end();
+    });
+  };
+
 
   let filePath = '..' + request.url;
   if (filePath == '../') {
